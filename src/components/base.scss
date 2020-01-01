@@ -1,0 +1,40 @@
+$blue: #0059b3;
+$background-gray: #E8E8E8;
+
+
+.max-width {
+  max-width: 120rem;
+}
+
+.title {
+  font-size: 3rem;
+  padding: 4rem 0 2rem 0;
+  font-family: 'Bowlby One SC', cursive;
+  color: $blue;
+  text-align: center;
+}
+
+.vertical-timeline-element-icon {
+  border: 3px solid white;
+  box-shadow: none;
+}
+
+.vertical-timeline-element-title {
+  font-size: 2rem;
+}
+
+.vertical-timeline-element-subtitle {
+  font-size: 1.3rem;
+  color: 	#696969;
+  font-style: italic;
+}
+
+.vertical-timeline-element-text {
+  font-size: 1.4rem !important;
+}
+
+.vertical-timeline-element-date {
+  font-size: 1.8rem !important;
+  color: black;
+}
+

@@ -1,0 +1,56 @@
+
+.hero {
+
+  &__image {
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    background-position: center top;
+  }
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__cloud {
+    color: white;
+    position: absolute;
+    background-image: url("../../images/hero/cloud-big.svg");
+    width: 700px;
+    height: 485px;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    top: 200px;
+    opacity: 1;
+    z-index: 1;
+
+    &--small {
+      background-image: url("../../images/hero/cloud-med.svg");
+      width: 110px;
+      height: 80px;
+      left: 50%;
+      top: 65%;
+    }
+
+  }
+
+  &__title {
+     font-weight: bolder;
+     margin-top: 5rem;
+     color: #0059b3;
+     font-size: 4.5rem;
+     text-transform: uppercase;
+     letter-spacing: 7px;
+
+    &--small {
+      color: black;
+    }
+   }
+
+  &__text {
+    font-size: 1.5rem;
+  }
+}
