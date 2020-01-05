@@ -1,17 +1,31 @@
-$blue: #0059b3;
+$blue: #40a3d5;;
 $background-gray: #E8E8E8;
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 
 .max-width {
   max-width: 120rem;
 }
 
 .title {
-  font-size: 3rem;
-  padding: 4rem 0 2rem 0;
-  font-family: 'Bowlby One SC', cursive;
+  font-size: 2.7rem;
+  margin: 0;
+  padding: 4rem 0 .6rem 0;
+  //font-family: 'Bowlby One SC', cursive;
+  //font-family: 'Muli, sans-serif, Arial';
+  font-family: 'Open Sans', sans-serif;
   color: $blue;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+  padding: 0rem 0 2rem 0;
 }
 
 .vertical-timeline-element-icon {

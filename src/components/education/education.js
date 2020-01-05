@@ -15,6 +15,7 @@ export const Education = () => {
   return (
     <div className="education">
       <h1 className="title">EDUCATION</h1>
+      <p className="subtitle">My education and courses history</p>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

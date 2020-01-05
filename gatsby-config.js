@@ -31,7 +31,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Bowlby']
+          families: ['Bowlby+One+SC&display=swa', 'Bowlby+One+SC|Open+Sans&display=swap']
         }
       }
     }
