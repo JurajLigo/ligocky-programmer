@@ -10,49 +10,49 @@ export const Header = () => (
         <FontAwesomeIcon
           className="header__icon"
           icon="child"
-          size="1x"
+          size="lg"
         />
-        ABOUT ME
+        <span className="header__text">ABOUT ME</span>
       </Link>
       <Link className="header__link">
         <FontAwesomeIcon
           className="header__icon"
           icon="briefcase"
-          size="1x"
+          size="lg"
         />
-        EXPERIENCES
+        <span className="header__text">EXPERIENCES</span>
       </Link>
       <Link className="header__link">
         <FontAwesomeIcon
           className="header__icon"
           icon="tools"
-          size="1x"
+          size="lg"
         />
-        SKILLS
+        <span className="header__text">SKILLS</span>
       </Link>
       <Link className="header__link">
         <FontAwesomeIcon
           className="header__icon"
           icon="graduation-cap"
-          size="1x"
+          size="lg"
         />
-      EDUCATION
+        <span className="header__text">EDUCATION</span>
       </Link>
       <Link className="header__link">
         <FontAwesomeIcon
           className="header__icon"
           icon="globe"
-          size="1x"
+          size="lg"
         />
-        LANGUAGES
+        <span className="header__text">LANGUAGES</span>
       </Link>
       <Link className="header__link">
         <FontAwesomeIcon
           className="header__icon"
           icon="running"
-          size="1x"
+          size="lg"
         />
-        HOBBIES
+        <span className="header__text">HOBBIES</span>
       </Link>
     </nav>
   </header>

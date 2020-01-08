@@ -4,7 +4,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 export const Hobby = () => {
   return (
-    <div className="cv__container cv__container--gray">
+    <div className="base-container">
       <h1 className="title">Hobbies</h1>
       <p className="subtitle">What i like</p>
       <div className="hobby__wrapper">

@@ -1,18 +1,22 @@
 $blue: #40a3d5;;
 $background-gray: #E8E8E8;
 
+$mobile: 768px;
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.max-width {
+.base-container {
   max-width: 120rem;
+  margin: 0 auto;
+  padding: 3rem 0;
 }
 
 .title {
   font-size: 2.7rem;
   margin: 0;
-  padding: 4rem 0 .6rem 0;
+  padding: 0rem 0 .6rem 0;
   //font-family: 'Bowlby One SC', cursive;
   //font-family: 'Muli, sans-serif, Arial';
   font-family: 'Open Sans', sans-serif;
