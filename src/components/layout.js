@@ -1,13 +1,7 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Element } from "react-scroll"
 import {library} from '@fortawesome/fontawesome-svg-core'
 import {faGraduationCap, faBasketballBall, faGlobe, faBookOpen, faBicycle, faBaby,
   faBriefcase, faTools, faRunning, faChild, faDumbbell, faPlane} from '@fortawesome/free-solid-svg-icons'
@@ -47,8 +41,12 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <Hero />
-      <Education />
-      <Hobby />
+      <Element name="education">
+        <Education />
+      </Element>
+      <Element name="hobbies">
+        <Hobby />
+      </Element>
     </>
   )
 }
