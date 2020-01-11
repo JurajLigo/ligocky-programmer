@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Scroll from "react-scroll"
 import "./header.scss"
 
-const ScrollLink = Scroll.Link;
+const ScrollLink = Scroll.Link
 
 export const Header = () => (
   <header className="header">
@@ -19,27 +19,15 @@ export const Header = () => (
         className="header__link"
         activeClass="header__link--active"
       >
-        <FontAwesomeIcon
-          className="header__icon"
-          icon="child"
-          size="lg"
-        />
+        <FontAwesomeIcon className="header__icon" icon="child" size="lg" />
         <span className="header__text">ABOUT ME</span>
       </ScrollLink>
       <Link className="header__link">
-        <FontAwesomeIcon
-          className="header__icon"
-          icon="briefcase"
-          size="lg"
-        />
+        <FontAwesomeIcon className="header__icon" icon="briefcase" size="lg" />
         <span className="header__text">EXPERIENCES</span>
       </Link>
       <Link className="header__link">
-        <FontAwesomeIcon
-          className="header__icon"
-          icon="tools"
-          size="lg"
-        />
+        <FontAwesomeIcon className="header__icon" icon="tools" size="lg" />
         <span className="header__text">SKILLS</span>
       </Link>
       <ScrollLink
@@ -48,25 +36,30 @@ export const Header = () => (
         hashSpy={true}
         smooth={true}
         duration={500}
-        offset={-50}
+        offset={-100}
         className="header__link"
         activeClass="header__link--active"
       >
         <FontAwesomeIcon
           className="header__icon"
-          icon="child"
+          icon="graduation-cap"
           size="lg"
         />
         <span className="header__text">EDUCATION</span>
       </ScrollLink>
-      <Link className="header__link">
-        <FontAwesomeIcon
-          className="header__icon"
-          icon="globe"
-          size="lg"
-        />
+      <ScrollLink
+        to="languages"
+        spy={true}
+        hashSpy={true}
+        smooth={true}
+        duration={500}
+        offset={-50}
+        className="header__link"
+        activeClass="header__link--active"
+      >
+        <FontAwesomeIcon className="header__icon" icon="globe" size="lg" />
         <span className="header__text">LANGUAGES</span>
-      </Link>
+      </ScrollLink>
       <ScrollLink
         to="hobbies"
         spy={true}
@@ -77,11 +70,7 @@ export const Header = () => (
         className="header__link"
         activeClass="header__link--active"
       >
-        <FontAwesomeIcon
-          className="header__icon"
-          icon="child"
-          size="lg"
-        />
+        <FontAwesomeIcon className="header__icon" icon="running" size="lg" />
         <span className="header__text">HOBBIES</span>
       </ScrollLink>
     </nav>

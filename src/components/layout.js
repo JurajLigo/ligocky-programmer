@@ -9,8 +9,10 @@ import {faGraduationCap, faBasketballBall, faGlobe, faBookOpen, faBicycle, faBab
 import { Header } from "./header/header"
 import { Hero } from "./hero/hero"
 import { Education } from "./education/education"
-import "./layout.css"
 import { Hobby } from "./hobby/hobby"
+import { Language } from "./language/language"
+
+import "./layout.css"
 
 
 library.add(faGraduationCap)
@@ -43,6 +45,9 @@ const Layout = ({ children }) => {
       <Hero />
       <Element name="education">
         <Education />
+      </Element>
+      <Element name="languages">
+        <Language />
       </Element>
       <Element name="hobbies">
         <Hobby />

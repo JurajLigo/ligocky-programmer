@@ -1,0 +1,33 @@
+@import ".././base";
+
+.language {
+
+  &__section {
+    margin: 4rem 0;
+  }
+
+  &__row {
+    font-size: 2rem;
+    display: flex;
+    margin: 2rem 0;
+    justify-content: center;
+  }
+
+  &__rating {
+    height: 3rem;
+    width: 3rem;
+    background-color: $background-gray;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 .5rem;
+
+    &--fill {
+      background-color: $blue;
+    }
+
+    @media screen and (max-width: $mobile) {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+}
