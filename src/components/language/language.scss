@@ -4,13 +4,35 @@
 
   &__section {
     margin: 4rem 0;
+    display: inline-flex;
+    flex-direction: column;
   }
 
   &__row {
     font-size: 2rem;
     display: flex;
     margin: 2rem 0;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+      margin: 1rem 0;
+      align-items: normal;
+    }
+  }
+
+  &__title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  &__subtitle {
+    margin-top: .4rem;
+    color: $subtitle-gray;
+    font-size: 1.4rem;
+    font-weight: normal;
   }
 
   &__rating {
@@ -19,15 +41,27 @@
     background-color: $background-gray;
     border-radius: 50%;
     display: inline-block;
-    margin: 0 .5rem;
+    margin: 1rem .5rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
 
     &--fill {
       background-color: $blue;
     }
 
     @media screen and (max-width: $mobile) {
-      height: 1.5rem;
-      width: 1.5rem;
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  &__rating-wrapper {
+    margin-left: 5rem;
+
+    @media screen and (max-width: $mobile) {
+      margin: 0;
     }
   }
 }
