@@ -66,7 +66,7 @@ export const Header = () => (
         hashSpy={true}
         smooth={true}
         duration={500}
-        offset={-50}
+        offset={-50}l
         className="header__link"
         activeClass="header__link--active"
       >

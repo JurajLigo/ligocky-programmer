@@ -1,5 +1,5 @@
 import * as React from "react"
-import Flag from "react-flags"
+import SlovakFlag from '../../images/flags/SK.png';
 import "./language.scss"
 
 export const Language = () => {
@@ -12,8 +12,8 @@ export const Language = () => {
         <div className="language__section">
           <div className="language__row">
             <div className="language__title">
-              SLOVAK
-              <div className="language__subtitle">Native</div>
+              <img src={SlovakFlag} className="language__flag" />
+              SLOVAK<span className="language__subtitle">Native</span>
             </div>
             <div className="language__rating-wrapper">
               <span className="language__rating language__rating--fill"></span>

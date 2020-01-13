@@ -64,4 +64,10 @@
       margin: 0;
     }
   }
+
+  &__flag {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 1rem;
+  }
 }
