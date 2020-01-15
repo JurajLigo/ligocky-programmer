@@ -1,5 +1,8 @@
 import * as React from "react"
-import SlovakFlag from '../../images/flags/SK.png';
+import SlovakFlag from "../../images/flags/SK.svg"
+import BritainFlag from "../../images/flags/GB.svg"
+import GermanFlag from "../../images/flags/DE.svg"
+import SpainFlag from "../../images/flags/ES.svg"
 import "./language.scss"
 
 export const Language = () => {
@@ -11,9 +14,12 @@ export const Language = () => {
 
         <div className="language__section">
           <div className="language__row">
-            <div className="language__title">
+            <div className="language__title-wrapper">
               <img src={SlovakFlag} className="language__flag" />
-              SLOVAK<span className="language__subtitle">Native</span>
+              <div className="language__title">
+                SLOVAK
+                <span className="language__subtitle">Native</span>
+              </div>
             </div>
             <div className="language__rating-wrapper">
               <span className="language__rating language__rating--fill"></span>
@@ -30,9 +36,12 @@ export const Language = () => {
           </div>
 
           <div className="language__row">
-            <div className="language__title">
-              ENGLISH
-              <div className="language__subtitle">Professional working proficiency</div>
+            <div className="language__title-wrapper">
+              <img src={BritainFlag} className="language__flag" />
+              <div className="language__title">
+                ENGLISH
+                <span className="language__subtitle">Professional working proficiency</span>
+              </div>
             </div>
             <div className="language__rating-wrapper">
               <span className="language__rating language__rating--fill"></span>
@@ -40,6 +49,28 @@ export const Language = () => {
               <span className="language__rating language__rating--fill"></span>
               <span className="language__rating language__rating--fill"></span>
               <span className="language__rating language__rating--fill"></span>
+              <span className="language__rating language__rating--fill"></span>
+              <span className="language__rating language__rating--fill"></span>
+              <span className="language__rating language__rating--fill"></span>
+              <span className="language__rating"></span>
+              <span className="language__rating"></span>
+            </div>
+          </div>
+
+          <div className="language__row">
+            <div className="language__title-wrapper">
+              <img src={GermanFlag} className="language__flag" />
+              <div className="language__title">
+                GERMAN
+                <span className="language__subtitle">Pre-intermediate level</span>
+              </div>
+            </div>
+            <div className="language__rating-wrapper">
+              <span className="language__rating language__rating--fill"></span>
+              <span className="language__rating language__rating--fill"></span>
+              <span className="language__rating language__rating--fill"></span>
+              <span className="language__rating"></span>
+              <span className="language__rating"></span>
               <span className="language__rating"></span>
               <span className="language__rating"></span>
               <span className="language__rating"></span>
@@ -47,6 +78,29 @@ export const Language = () => {
               <span className="language__rating"></span>
             </div>
           </div>
+
+          <div className="language__row">
+            <div className="language__title-wrapper">
+              <img src={SpainFlag} className="language__flag" />
+              <div className="language__title">
+                SPANISH
+                <span className="language__subtitle">Basics</span>
+              </div>
+            </div>
+            <div className="language__rating-wrapper">
+              <span className="language__rating language__rating--fill"></span>
+              <span className="language__rating"></span>
+              <span className="language__rating"></span>
+              <span className="language__rating"></span>
+              <span className="language__rating"></span>
+              <span className="language__rating"></span>
+              <span className="language__rating"></span>
+              <span className="language__rating"></span>
+              <span className="language__rating"></span>
+              <span className="language__rating"></span>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
