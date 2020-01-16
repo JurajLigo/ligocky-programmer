@@ -7,6 +7,7 @@ import "react-vertical-timeline-component/style.min.css"
 import "../base.scss"
 import "./education.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { TimelineItem } from "../common/timelineItem"
 
 export const Education = () => {
   const iconBackground = { background: "rgb(255, 255, 255)", color: "darkgray" }
@@ -18,21 +19,7 @@ export const Education = () => {
         <h1 className="title">EDUCATION</h1>
         <p className="subtitle">My education and courses history</p>
         <VerticalTimeline>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2010 - 2011"
-            iconStyle={iconBackground}
-            icon={EducationIcon}
-          >
-            <h3 className="vertical-timeline-element-title">Art Director</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              San Francisco, CA
-            </h4>
-            <p className="vertical-timeline-element-text">
-              Creative Direction, User Experience, Visual Design, SEO, Online
-              Marketing
-            </p>
-          </VerticalTimelineElement>
+          <TimelineItem title="Senior programmer" subtitle="Subtitle" text="Tu sme" />
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2008 - 2010"

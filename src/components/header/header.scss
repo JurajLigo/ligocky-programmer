@@ -5,6 +5,7 @@
   width: 100%;
   background: white;
   z-index: 1;
+  box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, .3);
 
   &__navigation {
     display: flex;
@@ -12,7 +13,9 @@
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: space-around;
-    font-family: 'Open Sans', sans-serif;
+    //font-family: 'Open Sans', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   &__link {
@@ -24,7 +27,7 @@
 
     &--active {
       color: $blue;
-      border-bottom: 2px solid $blue;
+      border-bottom: 3px solid $blue;
     }
 
     @media screen and (max-width: $mobile) {

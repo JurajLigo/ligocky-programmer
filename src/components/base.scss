@@ -5,14 +5,19 @@ $subtitle-gray: #8a8a8b;
 $mobile: 768px;
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  //font-family: 'Open Sans', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .base-container {
   max-width: 120rem;
   margin: 0 auto;
   padding: 3rem 0;
-  font-family: 'Open Sans', sans-serif;
+  //font-family: 'Open Sans', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
 
 }
 
@@ -22,7 +27,9 @@ body {
   padding: 0rem 0 .6rem 0;
   //font-family: 'Bowlby One SC', cursive;
   //font-family: 'Muli, sans-serif, Arial';
-  font-family: 'Open Sans', sans-serif;
+  //font-family: 'Open Sans', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: $blue;
   text-align: center;
   text-transform: uppercase;
