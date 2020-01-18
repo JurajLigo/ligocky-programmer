@@ -42,27 +42,26 @@ body {
   padding: 0rem 0 2rem 0;
 }
 
-.vertical-timeline-element-icon {
-  border: 3px solid white;
-  box-shadow: none;
-}
+@media screen and (min-width: $mobile) {
 
-.vertical-timeline-element-title {
-  font-size: 2rem;
-}
+  /* width */
+  ::-webkit-scrollbar {
+    width: 1rem;
+  }
 
-.vertical-timeline-element-subtitle {
-  font-size: 1.3rem;
-  color: 	#696969;
-  font-style: italic;
-}
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
 
-.vertical-timeline-element-text {
-  font-size: 1.4rem !important;
-}
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $blue;
+  }
 
-.vertical-timeline-element-date {
-  font-size: 1.8rem !important;
-  color: black;
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $subtitle-gray;
+  }
 }
 

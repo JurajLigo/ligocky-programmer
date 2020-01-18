@@ -12,7 +12,7 @@ export const TimelineItem = props => {
 
   return (
     <VerticalTimelineElement
-      date="2010 - 2011, Bratislava"
+      date={props.date}
       iconStyle={iconBackground}
       icon={EducationIcon}
       className="timeline-item"
@@ -23,15 +23,16 @@ export const TimelineItem = props => {
       <h3 className="timeline-item__title">
         {props.title}
       </h3>
-      <p className="vertical-timeline-element-text">{props.text}</p>
+      <p className="vertical-timeline-element-text timeline-item__text">{props.text}</p>
     </VerticalTimelineElement>
   )
 }
 
 TimelineItem.propTypes = {
   headerText: PropTypes.string,
+  headerStyle: PropTypes.string,
   title: PropTypes.string,
   subtitle: PropTypes.string,
   text: PropTypes.string,
-  headerStyle: PropTypes.string,
+  date: PropTypes.string
 }

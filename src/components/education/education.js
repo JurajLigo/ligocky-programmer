@@ -22,6 +22,7 @@ export const Education = () => {
           <TimelineItem
             headerText="Slovak University of Technology, Faculty of Informatics and Information
         Technologies"
+            date="2009 - 2010, Bratislava"
             title="Engineer, Information systems"
             text="Engineering study focused on information systems and software architecture. The theme of
                         final project was: Using design patterns by service composition in SOA"
@@ -29,6 +30,7 @@ export const Education = () => {
           />
           <TimelineItem
             headerText="Universitat Politechnica de Catalunya, Faculcat d'Informatics de Barcelona"
+            date="2009, Barcelona"
             title="Master Software Engineering and Information
                         Systems"
             text="Six month study through the Erasmus exchange"
@@ -36,6 +38,7 @@ export const Education = () => {
           />
           <TimelineItem
             headerText="Posam"
+            date="2007, Bratislava"
             title="Succesfull participant of Java Academy"
             text="The half year lasting system of courses focused on Java and J2EE (quick guide to Java, Swing,
                         Spring, EJB, Wicket, design patterns). After passing all courses and tests i had to create J2EE
@@ -46,6 +49,7 @@ export const Education = () => {
           <TimelineItem
             headerText="Slovak University of Technology, Faculty of Informatics and Information
         Technologies"
+            date="2004 - 2008, Bratislava"
             title="Bachelor, Informatics"
             text="Bachelor study focused on informatics and programming. The theme of final project was:
                         Swing Guide"
@@ -53,6 +57,7 @@ export const Education = () => {
           />
           <TimelineItem
             headerText="Gymnasium Topolcany"
+            date="1996 - 2004, Topolcany"
             title="High School with graduation"
             text="8 years high school focused on foreign languages"
             headerStyle="education__header education__header--gymnasium"
