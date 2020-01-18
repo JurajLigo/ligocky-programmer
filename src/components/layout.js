@@ -42,7 +42,6 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <Hero />
       <Element name="education">
         <Education />
       </Element>
