@@ -25,6 +25,8 @@ import { Hobby } from "./hobby/hobby"
 import { Language } from "./language/language"
 
 import "./layout.css"
+import { Work } from "./work/work"
+import { Skill } from "./skill/skill"
 
 library.add(faGraduationCap)
 library.add(faBasketballBall)
@@ -54,6 +56,12 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <Hero />
+      <Element name="work">
+        <Work />
+      </Element>
+      <Element name="skills">
+        <Skill />
+      </Element>
       <Element name="education">
         <Education />
       </Element>

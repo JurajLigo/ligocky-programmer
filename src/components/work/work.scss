@@ -1,0 +1,29 @@
+@import ".././base";
+
+.work {
+  background: $background-gray;
+  font-family: 'Open Sans', sans-serif;
+
+  &__header {
+
+    &--stu {
+      background-color: #40a3d5;
+      color: white;
+    }
+
+    &--upc {
+      background-color: #007BC1;
+      color: white;
+    }
+
+    &--posam {
+      background-color: #F2F2F2;
+      color: black;
+    }
+
+    &--gymnasium {
+      background-color: #0078AA;
+      color: #FDD03F;
+    }
+  }
+}

@@ -17,8 +17,14 @@ export const Hobby = () => {
           </div>
           <div className="hobby__box">
             <div className="hobby__content">
+              <FontAwesomeIcon icon="plane" size="3x" />
+              <p className="hobby__text">Traveling on my own</p>
+            </div>
+          </div>
+          <div className="hobby__box">
+            <div className="hobby__content">
               <FontAwesomeIcon icon="bicycle" size="3x" />
-              <p className="hobby__text">Biking in the city</p>
+              <p className="hobby__text">Biking in the city with my folding bike</p>
             </div>
           </div>
           <div className="hobby__box">
@@ -29,20 +35,8 @@ export const Hobby = () => {
           </div>
           <div className="hobby__box">
             <div className="hobby__content">
-              <FontAwesomeIcon icon="plane" size="3x" />
-              <p className="hobby__text">Traveling on my own</p>
-            </div>
-          </div>
-          <div className="hobby__box">
-            <div className="hobby__content">
               <FontAwesomeIcon icon="dumbbell" size="3x" />
               <p className="hobby__text">Fitness</p>
-            </div>
-          </div>
-          <div className="hobby__box">
-            <div className="hobby__content">
-              <FontAwesomeIcon icon="baby" size="3x" />
-              <p className="hobby__text">Spending time with family</p>
             </div>
           </div>
         </div>

@@ -24,44 +24,62 @@ export const Education = () => {
         Technologies"
             date="2009 - 2010, Bratislava"
             title="Engineer, Information systems"
-            text="Engineering study focused on information systems and software architecture. The theme of
-                        final project was: Using design patterns by service composition in SOA"
             headerStyle="education__header education__header--stu"
-          />
+          >
+            <p className="vertical-timeline-element-text timeline-item__text">
+              Engineering study focused on information systems and software
+              architecture. The theme of final project was: Using design
+              patterns by service composition in SOA
+            </p>
+          </TimelineItem>
           <TimelineItem
             headerText="Universitat Politechnica de Catalunya, Faculcat d'Informatics de Barcelona"
             date="2009, Barcelona"
             title="Master Software Engineering and Information
                         Systems"
-            text="Six month study through the Erasmus exchange"
             headerStyle="education__header education__header--upc"
-          />
+          >
+            <p className="vertical-timeline-element-text timeline-item__text">
+              Six month study through the Erasmus exchange
+            </p>
+          </TimelineItem>
           <TimelineItem
-            headerText="Posam"
+            headerText="Posam - Java Academy"
             date="2007, Bratislava"
-            title="Succesfull participant of Java Academy"
-            text="The half year lasting system of courses focused on Java and J2EE (quick guide to Java, Swing,
-                        Spring, EJB, Wicket, design patterns). After passing all courses and tests i had to create J2EE
-                        application
-                        using mentioned frameworks. Best participants were then offered work contract"
+            title="Succesfull participant"
             headerStyle="education__header education__header--posam"
-          />
+          >
+            <p className="vertical-timeline-element-text timeline-item__text">
+              The half year lasting system of courses focused on Java and J2EE
+              (quick guide to Java, Swing, Spring, EJB, Wicket, design
+              patterns). After passing all courses and tests, I had to create
+              J2EE application using mentioned frameworks. Best participants
+              were then offered work contract
+            </p>
+          </TimelineItem>
           <TimelineItem
             headerText="Slovak University of Technology, Faculty of Informatics and Information
         Technologies"
             date="2004 - 2008, Bratislava"
             title="Bachelor, Informatics"
-            text="Bachelor study focused on informatics and programming. The theme of final project was:
-                        Swing Guide"
             headerStyle="education__header education__header--stu"
-          />
+          >
+            <p className="vertical-timeline-element-text timeline-item__text">
+              Bachelor study focused on informatics and programming. The theme of final project was:
+              Swing Guide
+            </p>
+          </TimelineItem>
           <TimelineItem
             headerText="Gymnasium Topolcany"
             date="1996 - 2004, Topolcany"
             title="High School with graduation"
             text="8 years high school focused on foreign languages"
             headerStyle="education__header education__header--gymnasium"
-          />
+          >
+            <p className="vertical-timeline-element-text timeline-item__text">
+              8 years high school focused on foreign languages
+            </p>
+          </TimelineItem>
         </VerticalTimeline>
       </div>
     </div>
