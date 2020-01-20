@@ -2,28 +2,44 @@
 
 .work {
   background: $background-gray;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 
   &__header {
-
-    &--stu {
-      background-color: #40a3d5;
-      color: white;
-    }
-
-    &--upc {
-      background-color: #007BC1;
-      color: white;
-    }
-
     &--posam {
-      background-color: #F2F2F2;
+      background-color: #f2f2f2;
       color: black;
     }
+  }
 
-    &--gymnasium {
-      background-color: #0078AA;
-      color: #FDD03F;
+  &__subtitle {
+    margin-bottom: 0;
+    font-style: italic;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+    &:after {
+      content: ":";
     }
+  }
+
+  &__text {
+    font-size: 1.4rem !important;
+    font-weight: 400 !important;
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  &__technology {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  &__technology-item {
+    background-color: #e0e0e0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+    border-radius: 1.5rem;
+    margin-right: 1rem;
   }
 }

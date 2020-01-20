@@ -15,28 +15,54 @@ export const Header = () => (
         hashSpy={true}
         smooth={true}
         duration={500}
-        offset={-50}
+        offset={0}
         className="header__link"
         activeClass="header__link--active"
       >
         <FontAwesomeIcon className="header__icon" icon="child" size="lg" />
         <span className="header__text">ABOUT ME</span>
       </ScrollLink>
-      <Link className="header__link">
-        <FontAwesomeIcon className="header__icon" icon="briefcase" size="lg" />
+      <ScrollLink
+        to="work"
+        spy={true}
+        hashSpy={true}
+        smooth={true}
+        duration={500}
+        offset={-50}
+        className="header__link"
+        activeClass="header__link--active"
+      >
+        <FontAwesomeIcon
+          className="header__icon"
+          icon="briefcase"
+          size="lg"
+        />
         <span className="header__text">EXPERIENCES</span>
-      </Link>
-      <Link className="header__link">
-        <FontAwesomeIcon className="header__icon" icon="tools" size="lg" />
+      </ScrollLink>
+      <ScrollLink
+        to="skills"
+        spy={true}
+        hashSpy={true}
+        smooth={true}
+        duration={500}
+        offset={-50}
+        className="header__link"
+        activeClass="header__link--active"
+      >
+        <FontAwesomeIcon
+          className="header__icon"
+          icon="tools"
+          size="lg"
+        />
         <span className="header__text">SKILLS</span>
-      </Link>
+      </ScrollLink>
       <ScrollLink
         to="education"
         spy={true}
         hashSpy={true}
         smooth={true}
         duration={500}
-        offset={-100}
+        offset={-50}
         className="header__link"
         activeClass="header__link--active"
       >
@@ -66,7 +92,7 @@ export const Header = () => (
         hashSpy={true}
         smooth={true}
         duration={500}
-        offset={-50}l
+        offset={-50}
         className="header__link"
         activeClass="header__link--active"
       >
