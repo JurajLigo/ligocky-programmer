@@ -1,0 +1,37 @@
+@import ".././base";
+
+.work-content-item {
+
+  &__subtitle {
+    margin-bottom: 0;
+    font-style: italic;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+    &:after {
+      content: ":";
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem !important;
+    font-weight: 400 !important;
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  &__technology {
+    display: flex;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  &__technology-item {
+    background-color: #e0e0e0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+    border-radius: 1.5rem;
+    margin: .2rem .5rem .2rem 0;
+  }
+}
