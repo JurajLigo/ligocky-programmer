@@ -4,8 +4,11 @@ import BritainFlag from "../../images/flags/GB.svg"
 import GermanFlag from "../../images/flags/DE.svg"
 import SpainFlag from "../../images/flags/ES.svg"
 import "./language.scss"
+import { Score } from "../common/score"
 
 export const Language = () => {
+  const limit = 10;
+
   return (
     <div className="language">
       <div className="base-container">
@@ -21,18 +24,7 @@ export const Language = () => {
                 <span className="language__subtitle">Native</span>
               </div>
             </div>
-            <div className="language__rating-wrapper">
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating language__rating--fill"></span>
-            </div>
+            <Score value={10} limit={limit} />
           </div>
 
           <div className="language__row">
@@ -43,18 +35,7 @@ export const Language = () => {
                 <span className="language__subtitle">Professional working proficiency</span>
               </div>
             </div>
-            <div className="language__rating-wrapper">
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating"></span>
-              <span className="language__rating"></span>
-            </div>
+            <Score value={8} limit={limit} />
           </div>
 
           <div className="language__row">
@@ -65,18 +46,7 @@ export const Language = () => {
                 <span className="language__subtitle">Pre-intermediate level</span>
               </div>
             </div>
-            <div className="language__rating-wrapper">
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating"></span>
-              <span className="language__rating"></span>
-              <span className="language__rating"></span>
-              <span className="language__rating"></span>
-              <span className="language__rating"></span>
-              <span className="language__rating"></span>
-              <span className="language__rating"></span>
-            </div>
+            <Score value={3} limit={limit} />
           </div>
 
           <div className="language__row">
@@ -87,18 +57,7 @@ export const Language = () => {
                 <span className="language__subtitle">Basics</span>
               </div>
             </div>
-            <div className="language__rating-wrapper">
-              <span className="language__rating language__rating--fill"></span>
-              <span className="language__rating"></span>
-              <span className="language__rating"></span>
-              <span className="language__rating"></span>
-              <span className="language__rating"></span>
-              <span className="language__rating"></span>
-              <span className="language__rating"></span>
-              <span className="language__rating"></span>
-              <span className="language__rating"></span>
-              <span className="language__rating"></span>
-            </div>
+            <Score value={1} limit={limit} />
           </div>
 
         </div>

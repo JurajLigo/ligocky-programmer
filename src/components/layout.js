@@ -59,12 +59,15 @@ const Layout = ({ children }) => {
       <Element name="work">
         <Work />
       </Element>
+      <div className="scroll-placeholder"></div>
       <Element name="skills">
         <Skill />
       </Element>
+      <div className="scroll-placeholder"></div>
       <Element name="education">
         <Education />
       </Element>
+      <div className="scroll-placeholder"></div>
       <Element name="languages">
         <Language />
       </Element>

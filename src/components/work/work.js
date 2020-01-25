@@ -18,8 +18,63 @@ export const Work = () => {
 
         <VerticalTimeline>
           <TimelineItem
+            headerText="GoHealth - Project GoHealth"
+            date="2019 - present, Bratislava"
+            title="Software Engineer"
+            headerStyle="work__header work__header--gohealth"
+            icon={WorkIcon}
+          >
+            <WorkContentItem
+              projectText="Health care system which provides the end-to-end care solution"
+              responsibilityText="Developing frontend components for showing health insurance plans in marketplace, parsing carrier data files and save data
+to database, implementing frontend components for A/B testing using google optimize, working with top american software engineers"
+              technologies={[
+                "React",
+                "Redux",
+                "TypeScript",
+                "HTML/CSS",
+                "Sass",
+                "BEM",
+                "Jasmine",
+                "Enzyme",
+                "Java",
+                "Spring",
+                "JUnit",
+                "Python"
+              ]}
+            />
+          </TimelineItem>
+
+          <TimelineItem
+            headerText="Erste - Project EMIL"
+            date="2017 - 2018 (1 year and 9 months), Vienna"
+            title="Senior Frontend Developer"
+            headerStyle="work__header work__header--erste"
+            icon={WorkIcon}
+          >
+            <WorkContentItem
+              projectText="Content management system, serving more than 200 web portals with millions of monthly
+                            visitors and over 300 content editors in various countries"
+              responsibilityText="Implementation of social communities components (polls, profile, login) and components for non-governmental business from scratch, implementation of
+                            completely new mobile header optimized and configurable for 200 web pages, programming frontend
+                            components based on specification"
+              technologies={[
+                "React",
+                "Redux",
+                "JavaScript",
+                "TypeScript",
+                "HTML/CSS",
+                "Sass",
+                "JQuery",
+                "BEM",
+                "AEM"
+              ]}
+            />
+          </TimelineItem>
+
+          <TimelineItem
             headerText="Touch4IT - Project CitySonder"
-            date="2016 - 2017, Bratislava"
+            date="2016 - 2017 (6 months), Bratislava"
             title="Fullstack Web Developer"
             headerStyle="work__header work__header--touch-four-it"
             icon={WorkIcon}
@@ -41,7 +96,7 @@ export const Work = () => {
 
           <TimelineItem
             headerText="VUB Bank - Project Multichannel"
-            date="2011 - 2016, Bratislava"
+            date="2011 - 2016 (5 years), Bratislava"
             title="Senior Programmer/Analyst"
             headerStyle="work__header work__header--vub"
             icon={WorkIcon}
@@ -69,7 +124,7 @@ export const Work = () => {
 
           <TimelineItem
             headerText="VUB Bank - Project SSV"
-            date="2010 - 2011, Bratislava"
+            date="2010 - 2011 (1 year), Bratislava"
             title="Junior Programmer"
             headerStyle="work__header work__header--vub"
             icon={WorkIcon}
@@ -97,7 +152,7 @@ export const Work = () => {
 
           <TimelineItem
             headerText="Posam - Project Cognisance"
-            date="2009 - 2010, Bratislava"
+            date="2009 - 2010 (1 year), Bratislava"
             title="Junior Java Programmer"
             headerStyle="work__header work__header--posam"
             icon={WorkIcon}
@@ -118,7 +173,7 @@ export const Work = () => {
 
           <TimelineItem
             headerText="Posam - Project Allianz"
-            date="2008 - 2009, Bratislava"
+            date="2008 - 2009 (6 months), Bratislava"
             title="Junior Java Programmer"
             text="8 years high school focused on foreign languages"
             headerStyle="work__header work__header--posam"

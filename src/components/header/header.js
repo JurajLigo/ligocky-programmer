@@ -5,7 +5,7 @@ import "./header.scss"
 
 const ScrollLink = Scroll.Link
 
-const SCROLLING_OFFSET = -40;
+const SCROLLING_OFFSET = -30;
 
 export const Header = () => (
   <header className="header">
