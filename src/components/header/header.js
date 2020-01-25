@@ -1,10 +1,11 @@
-import { Link } from "gatsby"
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Scroll from "react-scroll"
 import "./header.scss"
 
 const ScrollLink = Scroll.Link
+
+const SCROLLING_OFFSET = -40;
 
 export const Header = () => (
   <header className="header">
@@ -15,7 +16,7 @@ export const Header = () => (
         hashSpy={true}
         smooth={true}
         duration={500}
-        offset={0}
+        offset={SCROLLING_OFFSET}
         className="header__link"
         activeClass="header__link--active"
       >
@@ -28,7 +29,7 @@ export const Header = () => (
         hashSpy={true}
         smooth={true}
         duration={500}
-        offset={-50}
+        offset={SCROLLING_OFFSET}
         className="header__link"
         activeClass="header__link--active"
       >
@@ -45,7 +46,7 @@ export const Header = () => (
         hashSpy={true}
         smooth={true}
         duration={500}
-        offset={-50}
+        offset={SCROLLING_OFFSET}
         className="header__link"
         activeClass="header__link--active"
       >
@@ -62,7 +63,7 @@ export const Header = () => (
         hashSpy={true}
         smooth={true}
         duration={500}
-        offset={-50}
+        offset={SCROLLING_OFFSET}
         className="header__link"
         activeClass="header__link--active"
       >
@@ -79,7 +80,7 @@ export const Header = () => (
         hashSpy={true}
         smooth={true}
         duration={500}
-        offset={-50}
+        offset={SCROLLING_OFFSET}
         className="header__link"
         activeClass="header__link--active"
       >
@@ -92,7 +93,7 @@ export const Header = () => (
         hashSpy={true}
         smooth={true}
         duration={500}
-        offset={-50}
+        offset={SCROLLING_OFFSET}
         className="header__link"
         activeClass="header__link--active"
       >

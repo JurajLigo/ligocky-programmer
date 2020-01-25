@@ -15,5 +15,16 @@
       background-color: #F36F20;
       color: white;
     }
+
+    &--touch-four-it {
+      background: black;
+      color: white;
+    }
+  }
+
+  //override
+
+  .vertical-timeline-element-icon svg {
+    margin-left: -1rem;
   }
 }

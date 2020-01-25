@@ -1,7 +1,4 @@
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component"
+import { VerticalTimeline } from "react-vertical-timeline-component"
 import React from "react"
 import "react-vertical-timeline-component/style.min.css"
 import "../base.scss"
@@ -10,7 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { TimelineItem } from "../common/timelineItem"
 
 export const Education = () => {
-  const iconBackground = { background: "rgb(255, 255, 255)", color: "darkgray" }
   const EducationIcon = <FontAwesomeIcon icon="graduation-cap" size="2x" />
 
   return (
@@ -25,6 +21,7 @@ export const Education = () => {
             date="2009 - 2010, Bratislava"
             title="Engineer, Information systems"
             headerStyle="education__header education__header--stu"
+            icon={EducationIcon}
           >
             <p className="vertical-timeline-element-text timeline-item__text">
               Engineering study focused on information systems and software
@@ -38,6 +35,7 @@ export const Education = () => {
             title="Master Software Engineering and Information
                         Systems"
             headerStyle="education__header education__header--upc"
+            icon={EducationIcon}
           >
             <p className="vertical-timeline-element-text timeline-item__text">
               Six month study through the Erasmus exchange
@@ -48,6 +46,7 @@ export const Education = () => {
             date="2007, Bratislava"
             title="Succesfull participant"
             headerStyle="education__header education__header--posam"
+            icon={EducationIcon}
           >
             <p className="vertical-timeline-element-text timeline-item__text">
               The half year lasting system of courses focused on Java and J2EE
@@ -63,6 +62,7 @@ export const Education = () => {
             date="2004 - 2008, Bratislava"
             title="Bachelor, Informatics"
             headerStyle="education__header education__header--stu"
+            icon={EducationIcon}
           >
             <p className="vertical-timeline-element-text timeline-item__text">
               Bachelor study focused on informatics and programming. The theme of final project was:
@@ -75,6 +75,7 @@ export const Education = () => {
             title="High School with graduation"
             text="8 years high school focused on foreign languages"
             headerStyle="education__header education__header--gymnasium"
+            icon={EducationIcon}
           >
             <p className="vertical-timeline-element-text timeline-item__text">
               8 years high school focused on foreign languages

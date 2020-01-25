@@ -15,7 +15,7 @@ export const Language = () => {
         <div className="language__section">
           <div className="language__row">
             <div className="language__title-wrapper">
-              <img src={SlovakFlag} className="language__flag" />
+              <img alt="Slovak Flag" src={SlovakFlag} className="language__flag" />
               <div className="language__title">
                 SLOVAK
                 <span className="language__subtitle">Native</span>
@@ -37,7 +37,7 @@ export const Language = () => {
 
           <div className="language__row">
             <div className="language__title-wrapper">
-              <img src={BritainFlag} className="language__flag" />
+              <img alt="British Flag" src={BritainFlag} className="language__flag" />
               <div className="language__title">
                 ENGLISH
                 <span className="language__subtitle">Professional working proficiency</span>
@@ -59,7 +59,7 @@ export const Language = () => {
 
           <div className="language__row">
             <div className="language__title-wrapper">
-              <img src={GermanFlag} className="language__flag" />
+              <img alt="German Flag" src={GermanFlag} className="language__flag" />
               <div className="language__title">
                 GERMAN
                 <span className="language__subtitle">Pre-intermediate level</span>
@@ -81,7 +81,7 @@ export const Language = () => {
 
           <div className="language__row">
             <div className="language__title-wrapper">
-              <img src={SpainFlag} className="language__flag" />
+              <img alt="Spanish Flag" src={SpainFlag} className="language__flag" />
               <div className="language__title">
                 SPANISH
                 <span className="language__subtitle">Basics</span>
