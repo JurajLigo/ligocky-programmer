@@ -2,4 +2,73 @@
 
 .skill {
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
+
+  &__section {
+    margin: 4rem 0;
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  &__row {
+    font-size: 2rem;
+    display: flex;
+    padding: 1.5rem 0;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+      margin: 1rem 0;
+      align-items: normal;
+    }
+  }
+
+  &__title-wrapper {
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    flex: 1 0 auto;
+    max-width: 20rem;
+    font-size: 1.7rem;
+    font-weight: normal;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin-right: .6rem;
+
+    &--react {
+      background: black;
+      color: #61DAFB;
+    }
+
+    &--javascript {
+      background: #F7DF1D;
+      color: black;
+    }
+
+    &--typescript {
+      background: #007ACC;
+      color: white;
+    }
+
+    &--redux {
+      background: #764ABC;
+      color: white;
+    }
+
+    &--html {
+      background: #EC662B;
+      color: white;
+    }
+
+    &--css {
+      background: #2A97CF;
+      color: white;
+    }
+
+  }
 }

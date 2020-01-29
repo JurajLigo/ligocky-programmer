@@ -31,7 +31,8 @@ to database, implementing frontend components for A/B testing using google optim
               technologies={[
                 "React",
                 "Redux",
-                "TypeScript",
+                "Typescript",
+                "Javascript",
                 "HTML/CSS",
                 "Sass",
                 "BEM",
@@ -61,8 +62,8 @@ to database, implementing frontend components for A/B testing using google optim
               technologies={[
                 "React",
                 "Redux",
-                "JavaScript",
-                "TypeScript",
+                "Javascript",
+                "Typescript",
                 "HTML/CSS",
                 "Sass",
                 "JQuery",
@@ -85,8 +86,8 @@ to database, implementing frontend components for A/B testing using google optim
               responsibilityText="Implementing paging, sorting and filtering for all tables in application"
               technologies={[
                 "Angular 2",
-                "JavaScript",
-                "TypeScript",
+                "Javascript",
+                "Typescript",
                 "HTML/CSS",
                 "Bootstrap",
                 "Node.js"

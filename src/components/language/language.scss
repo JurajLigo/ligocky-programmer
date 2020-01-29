@@ -46,36 +46,6 @@
     font-weight: normal;
   }
 
-  &__rating {
-    height: 3rem;
-    width: 3rem;
-    background-color: $background-gray;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 1rem .5rem;
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &--fill {
-      background-color: $blue;
-    }
-
-    @media screen and (max-width: $mobile) {
-      height: 2.2rem;
-      width: 2.2rem;
-    }
-  }
-
-  &__rating-wrapper {
-    margin-left: 5rem;
-
-    @media screen and (max-width: $mobile) {
-      margin: 0;
-    }
-  }
-
   &__flag {
     display: inline-block;
     margin: 0;
