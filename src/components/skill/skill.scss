@@ -10,13 +10,17 @@
     flex-direction: column;
   }
 
+  &__section-title {
+    font-size: 2rem;
+  }
+
   &__row {
     font-size: 2rem;
     display: flex;
-    padding: 1.5rem 0;
+    padding: .8rem 0;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid $background-gray;
 
     @media screen and (max-width: $mobile) {
       flex-direction: column;
@@ -33,12 +37,17 @@
 
   &__title {
     flex: 1 0 auto;
-    max-width: 20rem;
     font-size: 1.7rem;
     font-weight: normal;
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     border-radius: 1rem;
     margin-right: .6rem;
+    background-color: #e0e0e0;
+    filter: grayscale(35%);
+
+    @media screen and (max-width: $mobile) {
+      flex: 0 1 auto;
+    }
 
     &--react {
       background: black;
@@ -70,5 +79,59 @@
       color: white;
     }
 
+    &--sass {
+      background: #F1F2F3;
+      color: #CF649A;
+    }
+
+    &--bem {
+      background: #8A8A9B;
+      color: white;
+    }
+
+    &--jasmine {
+      background: #8A4182;
+      color: white;
+    }
+
+    &--enzyme {
+      background: lightgrey;
+      color: black;
+    }
+
+    &--java {
+      background: #EE0000;
+      color: white;
+    }
+
+    &--j2ee {
+      background: lightgrey;
+      color: black;
+    }
+
+    &--python {
+      background: #1E415E;
+      color: #E3E3E3;
+    }
+
+    &--android {
+      background: #94C24B;
+      color: white;
+    }
+
+    &--git {
+      background: #EFEFE7;
+      color: black;
+    }
+
+    &--spring {
+      background: #65B843;
+      color: white;
+    }
+
+    &--gatsby {
+      background: #542C85;
+      color: white;
+    }
   }
 }

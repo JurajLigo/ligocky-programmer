@@ -53,4 +53,11 @@
     border-radius: .4rem;
     box-sizing: content-box;
   }
+
+  //override
+  .score__item {
+    width: 3rem;
+    height: 3rem;
+  }
+
 }
