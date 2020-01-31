@@ -71,6 +71,7 @@ const Layout = ({ children }) => {
       <Element name="languages">
         <Language />
       </Element>
+      <div className="scroll-placeholder"></div>
       <Element name="hobbies">
         <Hobby />
       </Element>

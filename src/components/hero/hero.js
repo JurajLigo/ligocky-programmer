@@ -19,10 +19,9 @@ export const Hero = () => {
   return (
     <>
       <BackgroundImage fluid={data.placeholderImage.childImageSharp.fluid} className="hero__image" >
-        {/*
-        <div className="hero__cloud">
-          <h2 className="hero__title hero__title--small">I AM</h2>
-          <h1 className="hero__title">Juraj Ligocky</h1>
+        <div className="hero__bubble">
+          <h2 className="title hero__title hero__title--small">I am</h2>
+          <h1 className="title hero__title">Juraj Ligocky</h1>
           <p className="hero__text">
             FRONTEND, FREELANCE DEVELOPER FOCUSING ON REACT WITH MORE THAN 9+ YEARS OF EXPERIENCES
             WITH SOFTWARE DEVELOPMENT. STARTED CAREER AS JAVA PROGRAMMER AND GRADUALLY TRANSFORM TO FRONTED
@@ -30,7 +29,6 @@ export const Hero = () => {
             ENVIRONMENT (BIG INFORMATION SYSTEMS) AND ALSO SMALL WEB PROJECTS
           </p>
         </div>
-     */}
       </BackgroundImage>
     </>
     )

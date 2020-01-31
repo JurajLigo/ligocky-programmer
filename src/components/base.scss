@@ -1,6 +1,7 @@
 $blue: #40a3d5;;
 $background-gray: #E8E8E8;
-$subtitle-gray: #8a8a8b;
+$dark-gray: #717171;
+$semi-gray: #8a8a8b;
 
 $mobile: 768px;
 
@@ -20,7 +21,7 @@ body {
 }
 
 .scroll-placeholder {
-  height: 3.5rem;
+  height: 3rem;
 }
 
 .title {
@@ -63,7 +64,7 @@ body {
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: $subtitle-gray;
+    background: $semi-gray;
   }
 }
 
