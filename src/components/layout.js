@@ -1,4 +1,5 @@
 import React from "react"
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Element } from "react-scroll"
