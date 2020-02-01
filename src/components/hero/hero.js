@@ -5,11 +5,19 @@ import "./hero.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const Hero = () => {
+
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "hero/hero.jpg" }) {
+      desktopImage: file(relativePath: { eq: "hero/hero.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 4800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      mobileImage: file(relativePath: { eq: "hero/hero-mobile.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1500) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -17,10 +25,18 @@ export const Hero = () => {
     }
   `)
 
+  const sources = [
+    data.mobileImage.childImageSharp.fluid,
+    {
+      ...data.desktopImage.childImageSharp.fluid,
+      media: `(min-width: 768px)`,
+    },
+  ]
+
   return (
     <>
       <BackgroundImage
-        fluid={data.placeholderImage.childImageSharp.fluid}
+        fluid={sources}
         className="hero__image"
       >
         <div className="base-container">
@@ -46,7 +62,7 @@ export const Hero = () => {
                   size="lg"
                   className="hero__icon"
                 />
-                +421 902329589
+                +421902329589
               </a>
               <a className="hero__button">
                 <FontAwesomeIcon

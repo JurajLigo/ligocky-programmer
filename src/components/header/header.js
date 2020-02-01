@@ -9,7 +9,7 @@ const SCROLLING_OFFSET = -30;
 
 export const Header = () => (
   <header className="header">
-    <nav class="header__navigation">
+    <nav className="header__navigation">
       <ScrollLink
         to="about-me"
         spy={true}

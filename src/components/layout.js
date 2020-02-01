@@ -61,7 +61,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <Hero />
+      <Element name="about-me">
+        <Hero />
+      </Element>
       <Element name="work">
         <Work />
       </Element>

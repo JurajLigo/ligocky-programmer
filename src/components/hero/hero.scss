@@ -16,12 +16,14 @@
 
   &__bubble {
     position: absolute;
+    margin-left: 3rem;
     background: rgba(255, 255, 255, 1);
     width: 40%;
     top: 50%;
     transform: translate(0, -50%);
-    padding: 3rem;
+    padding: 2rem;
     text-align: center;
+    max-width: 60rem;
     //border-top-right-radius: 10rem;
     //border-bottom-right-radius: 10rem;
     border-radius: 10rem;
@@ -59,6 +61,11 @@
     line-height: 2rem;
     color: $dark-gray;
     padding: 0 5rem;
+
+    @media screen and (max-width: $mobile) {
+      padding: 0 1rem;
+      margin-bottom: 0;
+    }
   }
 
   &__icon {
@@ -66,7 +73,7 @@
   }
 
   &__contacts {
-    margin-top: 3rem;
+    margin: 1rem;
   }
 
   &__button {
@@ -77,6 +84,11 @@
     font-size: 1.4rem;
     padding: 1rem;
     border-radius: 1rem;
-    margin-right: 1rem;
+    margin: 1rem 1rem 0 0;
+
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+
   }
 }

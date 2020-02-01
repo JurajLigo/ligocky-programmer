@@ -9,9 +9,9 @@ export const Score = props => {
 
   for (let step = 1; step <= limit; step++) {
     if (step <= value) {
-      items.push(<span className="score__item score__item--fill"></span>)
+      items.push(<span key={step} className="score__item score__item--fill"></span>)
     } else {
-      items.push(<span className="score__item"></span>)
+      items.push(<span key={step} className="score__item"></span>)
     }
   }
 

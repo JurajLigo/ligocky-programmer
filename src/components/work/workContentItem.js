@@ -11,8 +11,8 @@ export const WorkContentItem = props => {
       <p className="work-content-item__text">{props.responsibilityText}</p>
       <h3 className="work-content-item__subtitle">Technology stack</h3>
       <div className="work-content-item__technology">
-        {props.technologies.map(technology => (
-          <div className="work-content-item__technology-item">{technology}</div>
+        {props.technologies.map((technology, index) => (
+          <div key={index} className="work-content-item__technology-item">{technology}</div>
         ))}
       </div>
     </>
