@@ -40,6 +40,14 @@ export const Hero = () => {
         className="hero__image"
       >
         <div className="base-container">
+          <div className="hero__mobile">
+            <h1 className="hero__mobile-title">I AM JURAJ LIGOCKY</h1>
+            <p className="hero__mobile-text">
+              Freelance, frontend, software engineer focusing on react with more
+              than 10+ years of various experiences with software development
+            </p>
+          </div>
+
           <div className="hero__bubble">
             <h2 className="hero__subtitle">I AM</h2>
             <h1 className="hero__title">JURAJ LIGOCKY</h1>
@@ -54,7 +62,7 @@ export const Hero = () => {
                   size="lg"
                   className="hero__icon"
                 />
-
+                write me
               </a>
               <a className="hero__button">
                 <FontAwesomeIcon
@@ -62,7 +70,7 @@ export const Hero = () => {
                   size="lg"
                   className="hero__icon"
                 />
-
+              call me
               </a>
               <a className="hero__button">
                 <FontAwesomeIcon
@@ -70,7 +78,7 @@ export const Hero = () => {
                   size="lg"
                   className="hero__icon"
                 />
-
+                cv download
               </a>
             </div>
           </div>
