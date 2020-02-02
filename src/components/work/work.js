@@ -16,7 +16,7 @@ export const Work = () => {
         <h1 className="title">WORK EXPERIENCES</h1>
         <p className="subtitle">My working experiences</p>
 
-        <VerticalTimeline>
+        <VerticalTimeline animate={false}>
           <TimelineItem
             headerText="GoHealth - Project GoHealth"
             date="2019 - present, Bratislava"

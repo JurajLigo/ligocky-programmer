@@ -19,21 +19,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Juraj Ligocky CV`,
+        short_name: `Juraj Ligocky CV`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FFFFFF`,
+        theme_color: `#FFFFFF`,
         display: `minimal-ui`
       },
-    },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Bowlby+One+SC&display=swa', 'Bowlby+One+SC|Open+Sans&display=swap']
-        }
-      }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

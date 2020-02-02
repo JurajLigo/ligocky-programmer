@@ -14,7 +14,7 @@ export const Education = () => {
       <div className="base-container">
         <h1 className="title">EDUCATION</h1>
         <p className="subtitle">My education and courses history</p>
-        <VerticalTimeline>
+        <VerticalTimeline animate={false}>
           <TimelineItem
             headerText="Slovak University of Technology, Faculty of Informatics and Information
         Technologies"

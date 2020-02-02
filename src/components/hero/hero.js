@@ -26,11 +26,11 @@ export const Hero = () => {
   `)
 
   const sources = [
-    data.mobileImage.childImageSharp.fluid,
+    data.desktopImage.childImageSharp.fluid,
     {
-      ...data.desktopImage.childImageSharp.fluid,
-      media: `(min-width: 768px)`,
-    },
+      ...data.mobileImage.childImageSharp.fluid,
+      media: `(orientation: portrait)`
+    }
   ]
 
   return (
@@ -54,7 +54,7 @@ export const Hero = () => {
                   size="lg"
                   className="hero__icon"
                 />
-                j.ligocky@gmail.com
+
               </a>
               <a className="hero__button">
                 <FontAwesomeIcon
@@ -62,7 +62,7 @@ export const Hero = () => {
                   size="lg"
                   className="hero__icon"
                 />
-                +421902329589
+
               </a>
               <a className="hero__button">
                 <FontAwesomeIcon
@@ -70,7 +70,7 @@ export const Hero = () => {
                   size="lg"
                   className="hero__icon"
                 />
-                CV download
+
               </a>
             </div>
           </div>
