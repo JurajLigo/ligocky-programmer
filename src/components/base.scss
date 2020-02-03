@@ -4,6 +4,7 @@ $dark-gray: #717171;
 $semi-gray: #8a8a8b;
 
 $mobile: 768px;
+$tablet: 1024px;
 
 body {
   //font-family: 'Open Sans', sans-serif;
@@ -22,6 +23,14 @@ body {
 
 .scroll-placeholder {
   height: 3rem;
+
+  &--big {
+    height: 6rem;
+  }
+
+  &--gray {
+    background: $background-gray;
+  }
 }
 
 .title {

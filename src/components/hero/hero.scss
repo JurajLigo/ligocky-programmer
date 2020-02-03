@@ -24,8 +24,6 @@
     padding: 2rem;
     text-align: center;
     max-width: 60rem;
-    //border-top-right-radius: 10rem;
-    //border-bottom-right-radius: 10rem;
     border-radius: 10rem;
     //box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 1);
 
@@ -46,7 +44,38 @@
     }
 
     @media screen and (orientation: portrait) {
-      display: none;
+      width: 100%;
+      bottom: 0;
+      max-width: unset;
+      transform: unset;
+      margin-left: unset;
+      top: unset;
+      border-radius: unset;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+
+      &:after {
+        content: none;
+      }
+    }
+
+    @media screen and (max-width: $tablet) {
+      padding: .7rem;
+      border-radius: 7rem;
+
+      &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-left-color: rgba(255, 255, 255, 1);
+        border-right: 0;
+        margin-top: -15px;
+        margin-right: -15px;
+      }
     }
   }
 
@@ -54,12 +83,29 @@
     font-size: 4rem;
     color: $blue;
     font-weight: 900;
+
+    @media screen and (orientation: portrait) {
+      font-size: 3.2rem;
+    }
+
+    @media screen and (max-width: $tablet) {
+      font-size: 1.9rem;
+    }
   }
 
   &__subtitle {
     font-size: 2.5rem;
     color: $dark-gray;
     font-weight: 900;
+
+    @media screen and (orientation: portrait) {
+      font-size: 1.7rem;
+      margin-bottom: .4rem;
+    }
+
+    @media screen and (max-width: $tablet) {
+      font-size: 1.7rem;
+    }
   }
 
   &__text {
@@ -71,6 +117,11 @@
     @media screen and (max-width: $mobile) {
       padding: 0 1rem;
       margin-bottom: 0;
+    }
+
+    @media screen and (max-width: $tablet) {
+      font-size: 1.2rem;
+      padding: 0 .3rem;
     }
   }
 
@@ -85,14 +136,18 @@
   &__mobile {
     position: absolute;
     bottom: 0;
-    color: #fff;
     font-weight: 700;
     text-align: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
     padding: 2.5rem 2.5rem;
+    text-align: center;
     z-index: 1;
     background: rgba(0, 0, 0, .3);
     margin: 0 auto;
     width: 100%;
+    background: white;
+    display: none;
 
     @media screen and (orientation: landscape) {
       display: none;
@@ -101,8 +156,14 @@
 
   &__mobile-title {
     font-size: 3.1rem;
+    color: $blue;
     padding-bottom: .4rem;
-    border-bottom: 1px solid white;
+  }
+
+  &__mobile-subtitle {
+    font-size: 2.5rem;
+    margin-bottom: .6rem;
+    color: $dark-gray;
   }
 
   &__mobile-text {
@@ -110,6 +171,7 @@
     color: white;
     font-weight: 400;
     line-height: 2rem;
+    color: $dark-gray;
   }
 
   &__button {
@@ -118,12 +180,13 @@
     //border: 1px solid $blue;
     color: white;
     font-size: 1.4rem;
-    padding: 1rem;
+    padding: .8rem;
     border-radius: 1rem;
-    margin: 1rem 1rem 0 0;
+    margin: .6rem .6rem 0 0;
     text-transform: uppercase;
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $tablet) {
+      font-size: 1rem;
     }
 
   }

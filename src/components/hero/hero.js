@@ -41,7 +41,8 @@ export const Hero = () => {
       >
         <div className="base-container">
           <div className="hero__mobile">
-            <h1 className="hero__mobile-title">I AM JURAJ LIGOCKY</h1>
+            <h2 className="hero__mobile-subtitle">I AM</h2>
+            <h1 className="hero__mobile-title">JURAJ LIGOCKY</h1>
             <p className="hero__mobile-text">
               Freelance, frontend, software engineer focusing on react with more
               than 10+ years of various experiences with software development
