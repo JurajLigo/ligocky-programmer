@@ -62,6 +62,8 @@
     @media screen and (max-width: $tablet) and (orientation: landscape) {
       padding: .7rem;
       border-radius: 7rem;
+      top: 70%;
+      transform: translate(0, -70%);
 
       &:after {
         content: "";
