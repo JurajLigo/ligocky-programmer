@@ -59,7 +59,7 @@
       }
     }
 
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $tablet) and (orientation: landscape) {
       padding: .7rem;
       border-radius: 7rem;
 
@@ -88,7 +88,7 @@
       font-size: 3.2rem;
     }
 
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $tablet) and (orientation: landscape) {
       font-size: 1.9rem;
     }
   }
@@ -103,8 +103,9 @@
       margin-bottom: .4rem;
     }
 
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $tablet) and (orientation: landscape) {
       font-size: 1.7rem;
+      margin-bottom: .4rem;
     }
   }
 
@@ -119,7 +120,7 @@
       margin-bottom: 0;
     }
 
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $tablet) and (orientation: landscape) {
       font-size: 1.2rem;
       padding: 0 .3rem;
     }
