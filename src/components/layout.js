@@ -65,7 +65,7 @@ const Layout = ({ children }) => {
       <Element name="about-me">
         <Hero />
       </Element>
-      <div className="scroll-placeholder scroll-placeholder--big scroll-placeholder--gray"></div>
+      <div className="scroll-placeholder scroll-placeholder--gray"></div>
       <Element name="work">
         <Work />
       </Element>
