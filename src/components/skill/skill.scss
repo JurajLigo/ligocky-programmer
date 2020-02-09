@@ -148,6 +148,10 @@
     height: 2px;
     width: 50%;
     margin: 0 auto;
+
+    @media screen and (max-width: $mobile) {
+      width: 100%;
+    }
   }
 
   // override

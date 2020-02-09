@@ -8,7 +8,7 @@ export const Hero = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      desktopImage: file(relativePath: { eq: "hero/hero-2.jpg" }) {
+      desktopImage: file(relativePath: { eq: "hero/hero-mobile.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid
@@ -36,11 +36,10 @@ export const Hero = () => {
   return (
     <>
         <div className="base-container hero">
-          <h1 className="title">ABOUT ME</h1>
-          <p className="subtitle hero__main-subtitle">A small introduction about myself</p>
           <div className="hero__wrapper">
             <div className="hero__content">
-              <h3 className="hero__title">Juraj Ligocky</h3>
+              <h1 className="title">ABOUT ME</h1>
+              <p className="subtitle hero__main-subtitle">A small introduction about myself</p>
               <p className="hero__text">Freelance, software engineer focusing on React with more than 10+ years of various experiences with software
                 development. Started career as Java programmer and gradually transform to frontend Javascript. Skilled, passionate
                 professional with a demonstrated history of working in the international environment, big information systems,
