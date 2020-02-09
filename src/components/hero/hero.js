@@ -8,7 +8,7 @@ export const Hero = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      desktopImage: file(relativePath: { eq: "hero/hero-mobile.jpg" }) {
+      desktopImage: file(relativePath: { eq: "hero/hero-2.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid
