@@ -11,7 +11,14 @@
   }
 
   &__section-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 6rem;
+  }
+
+  &__tab {
+    border: 1px solid $background-gray;
   }
 
   &__row {
@@ -134,4 +141,38 @@
       color: white;
     }
   }
+
+  .skill__line {
+    border-radius: 5px;
+    background-color: $blue;
+    height: 2px;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  // override
+
+  .react-tabs {
+  }
+
+  .react-tabs__tab-list {
+    border-bottom: unset;
+    margin-bottom: 0;
+  }
+
+  .react-tabs__tab {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 2rem;
+    //border: 2px solid $background-gray;
+    //border-bottom: unset;
+
+    &--selected {
+      border: 2px solid $blue;
+      border-bottom: unset;
+      margin-bottom: 0;
+    }
+  }
+
 }
