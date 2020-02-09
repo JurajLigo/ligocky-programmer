@@ -35,11 +35,12 @@ export const Hero = () => {
 
   return (
     <>
-        <div className="base-container base-container--zero-padding">
+        <div className="base-container hero">
+          <h1 className="title">ABOUT ME</h1>
+          <p className="subtitle hero__main-subtitle">A small introduction about myself</p>
           <div className="hero__wrapper">
             <div className="hero__content">
-              <h2 className="hero__subtitle">I AM</h2>
-              <h1 className="hero__title">JURAJ LIGOCKY</h1>
+              <h3 className="hero__title">Juraj Ligocky</h3>
               <p className="hero__text">Freelance, software engineer focusing on React with more than 10+ years of various experiences with software
                 development. Started career as Java programmer and gradually transform to frontend Javascript. Skilled, passionate
                 professional with a demonstrated history of working in the international environment, big information systems,

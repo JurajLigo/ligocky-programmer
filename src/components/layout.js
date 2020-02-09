@@ -31,6 +31,7 @@ import { Language } from "./language/language"
 import "./layout.css"
 import { Work } from "./work/work"
 import { Skill } from "./skill/skill"
+import { Welcome } from "./welcome/welcome"
 
 library.add(faGraduationCap)
 library.add(faBasketballBall)
@@ -62,6 +63,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
+      <Welcome />
       <Element name="about-me">
         <Hero />
       </Element>
