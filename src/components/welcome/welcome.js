@@ -1,6 +1,4 @@
 import React from "react"
-import ReactTypingEffect from "react-typing-effect"
-import Typist from "react-typist"
 import Typing from 'react-typing-animation'
 
 import "./welcome.scss"
