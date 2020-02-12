@@ -28,7 +28,7 @@ export const Skill = () => {
           <TabPanel>
             <div className="skill__section">
             <ul className="skill__list">
-              <li className="skill__list-item">good knowledge and years of experiences with Git</li>
+              <li className="skill__list-item">good knowledge of working with Git</li>
               <li className="skill__list-item">good communication skills</li>
               <li className="skill__list-item">experiences with SCRUM</li>
               <li className="skill__list-item">experiences with SOA, MDA, BPM</li>
