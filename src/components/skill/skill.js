@@ -16,13 +16,24 @@ export const Skill = () => {
           <TabList>
             <Tab>Frontend</Tab>
             <Tab>Backend</Tab>
+            <Tab>Other Skills</Tab>
           </TabList>
           <hr className="skill__line" />
           <TabPanel>
            <Frontend />
           </TabPanel>
           <TabPanel>
-            <Backend />
+          <Backend />
+        </TabPanel>
+          <TabPanel>
+            <div className="skill__section">
+            <ul className="skill__list">
+              <li className="skill__list-item">good knowledge and years of experiences with Git</li>
+              <li className="skill__list-item">good communication skills</li>
+              <li className="skill__list-item">experiences with SCRUM</li>
+              <li className="skill__list-item">experiences with SOA, MDA, BPM</li>
+            </ul>
+            </div>
           </TabPanel>
         </Tabs>
       </div>

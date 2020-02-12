@@ -50,22 +50,6 @@ export const Backend = () => {
         </div>
         <Score value={2} limit={limit} />
       </div>
-
-      <div className="skill__row">
-        <div className="skill__title-wrapper">
-          <div className="skill__title skill__title--git">Git</div>
-        </div>
-        <Score value={7} limit={limit} />
-      </div>
-
-      <div className="skill__row">
-        <div className="skill__title-wrapper">
-          <div className="skill__title skill__title">SOA</div>
-          <div className="skill__title skill__title">MDA</div>
-          <div className="skill__title skill__title">BPM</div>
-        </div>
-        <Score value={3} limit={limit} />
-      </div>
     </div>
   )
 }

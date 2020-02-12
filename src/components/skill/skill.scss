@@ -144,7 +144,7 @@
 
   .skill__line {
     border-radius: 5px;
-    background-color: $blue;
+    background-color: $background-gray;
     height: 2px;
     width: 50%;
     margin: 0 auto;
@@ -154,10 +154,27 @@
     }
   }
 
-  // override
-
-  .react-tabs {
+  &__list {
+    text-align: left;
+    font-size: 1.7rem;
+    list-style: none;
   }
+
+  &__list-item {
+    padding: .8rem 0;
+
+    &:before {
+      content: "•";
+      color: $blue;
+      font-size: 3rem;
+      display: inline-block;
+      vertical-align: top;
+      width: 2rem;
+      margin-left: -1rem;
+    }
+  }
+
+  // override
 
   .react-tabs__tab-list {
     border-bottom: unset;
@@ -172,8 +189,19 @@
     //border: 2px solid $background-gray;
     //border-bottom: unset;
 
+    @media screen and (max-width: $mobile) {
+      font-size: 1.4rem;
+      padding: 1.5rem;
+    }
+
+    &:focus {
+      box-shadow: unset;
+      border-color: unset;
+      outline: none;
+    }
+
     &--selected {
-      border: 2px solid $blue;
+      border: 2px solid $background-gray;
       border-bottom: unset;
       margin-bottom: 0;
     }
