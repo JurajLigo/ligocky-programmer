@@ -19,7 +19,8 @@ import {
   faPlane,
   faEnvelope,
   faMobileAlt,
-  faFilePdf
+  faFilePdf,
+  faArrowCircleDown
 } from "@fortawesome/free-solid-svg-icons"
 
 import { Header } from "./header/header"
@@ -48,6 +49,7 @@ library.add(faBaby)
 library.add(faEnvelope)
 library.add(faMobileAlt)
 library.add(faFilePdf)
+library.add(faArrowCircleDown)
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

@@ -1,12 +1,19 @@
 import React from "react"
-import Typing from 'react-typing-animation'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Typing from "react-typing-animation"
 
 import "./welcome.scss"
 
 export const Welcome = () => {
   return (
     <div className="welcome">
-      <div className="welcome__first"></div>
+      <div className="welcome__first">
+        <FontAwesomeIcon
+          className="welcome__arrow-down"
+          icon="arrow-circle-down"
+          size="4x"
+        />
+      </div>
       <div className="welcome__second"></div>
       <div className="welcome__content">
         <p className="welcome__subtitle">I am</p>
