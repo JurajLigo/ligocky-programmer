@@ -5,6 +5,7 @@ import { Backend } from "./backend"
 import "../base.scss"
 import "./skill.scss"
 import 'react-tabs/style/react-tabs.css'
+import { OtherSkill } from "./otherSkill"
 
 export const Skill = () => {
   return (
@@ -26,14 +27,7 @@ export const Skill = () => {
           <Backend />
         </TabPanel>
           <TabPanel>
-            <div className="skill__section">
-            <ul className="skill__list">
-              <li className="skill__list-item">good knowledge of working with Git</li>
-              <li className="skill__list-item">good communication skills</li>
-              <li className="skill__list-item">experiences with SCRUM</li>
-              <li className="skill__list-item">experiences with SOA, MDA, BPM</li>
-            </ul>
-            </div>
+            <OtherSkill />
           </TabPanel>
         </Tabs>
       </div>

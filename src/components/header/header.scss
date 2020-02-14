@@ -6,6 +6,12 @@
   background: white;
   z-index: 2;
   box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, .3);
+  transition: box-shadow 1s, background 1s;
+
+  &--init {
+    box-shadow: none;
+    background: unset;
+  }
 
   &__navigation {
     display: flex;
