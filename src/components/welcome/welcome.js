@@ -9,12 +9,12 @@ export const Welcome = () => {
     <div className="welcome">
       <div className="welcome__first">
       </div>
-      <div className="welcome__second"></div>
       <FontAwesomeIcon
         className="welcome__arrow-down"
         icon="arrow-circle-down"
         size="4x"
       />
+      <div className="welcome__second"></div>
       <div className="welcome__content">
         <p className="welcome__subtitle">I am</p>
         <h1 className="welcome__title">Juraj Ligocky</h1>
