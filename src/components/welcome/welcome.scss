@@ -10,17 +10,18 @@
     width: 50%;
 
     &:after {
+      display: none;
       content: '';
       position: absolute;
       right: 0;
       bottom: 4rem;
       width: 0;
       height: 0;
-      border: 50px solid transparent;
+      border: 40px solid transparent;
       border-left-color: $background-gray;
       border-right: 0;
-      margin-top: -50px;
-      margin-right: -50px;
+      margin-top: -40px;
+      margin-right: -40px;
 
       @media screen and (max-width: $tablet) and (orientation: landscape) {
         bottom: 0rem;
@@ -31,8 +32,9 @@
   &__arrow-down {
     position: absolute;
     color: $blue;
-    bottom: 7rem;
-    right: -3rem;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%, 0);
     z-index: 1;
 
     @media screen and (max-width: $tablet) and (orientation: landscape) {
