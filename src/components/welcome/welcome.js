@@ -9,20 +9,36 @@ import { useStaticQuery } from "gatsby"
 export const Welcome = () => {
   const data = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "hero/mac.jpg" }) {
+      desktopImage: file(relativePath: { eq: "hero/mac.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 6000) {
             ...GatsbyImageSharpFluid
           }
         }
       }
+      mobileImage: file(relativePath: { eq: "hero/mac-mobile-2.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 768) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
+
+  const sources = [
+    data.desktopImage.childImageSharp.fluid,
+    {
+      ...data.mobileImage.childImageSharp.fluid,
+      media: `(max-width: 768px) and (orientation: portrait)`,
+    },
+  ]
+
   return (
     <div className="welcome">
       <div className="welcome__background-wrapper">
         <BackgroundImage
-          fluid={data.image.childImageSharp.fluid}
+          fluid={sources}
           className="welcome__background"
         />
       </div>
