@@ -9,8 +9,12 @@
   transition: box-shadow 1s, background 1s;
 
   &--init {
-    box-shadow: none;
-    background: unset;
+    //box-shadow: none;
+    background: rgba(0, 0, 0, .5);
+
+    .header__link {
+      color: white;
+    }
   }
 
   &__navigation {
