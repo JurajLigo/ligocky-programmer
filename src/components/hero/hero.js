@@ -36,6 +36,9 @@ export const Hero = () => {
     <>
       <div className="base-container hero">
         <div className="hero__wrapper">
+          <div className="hero__image-wrapper">
+            <Img fluid={sources} className="hero__image" />
+          </div>
           <div className="hero__content">
             <h1 className="title">ABOUT ME</h1>
             <p className="subtitle hero__main-subtitle">
@@ -77,9 +80,6 @@ export const Hero = () => {
                 cv download
               </a>
             </div>
-          </div>
-          <div className="hero__image-wrapper">
-            <Img fluid={sources} className="hero__image" />
           </div>
         </div>
       </div>
