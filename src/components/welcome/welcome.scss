@@ -1,35 +1,16 @@
 @import "../base";
 
-
 .welcome {
   position: relative;
-
-  &__section-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-  }
-
-  &__wrapper {
-    position: relative;
-    display: flex;
-  }
-
-  &__background {
-    height: 100vh;
-    filter: grayscale(90%);
-  }
+  display: flex;
 
   &__first {
     position:relative;
     height: 100vh;
-    //background-color: $background-gray;
+    background-color: $background-gray;
     width: 50%;
 
     &:after {
-      display: none;
       content: '';
       position: absolute;
       right: 0;
@@ -50,7 +31,7 @@
 
   &__arrow-down {
     position: absolute;
-    color: white;
+    color: $blue;
     bottom: 6rem;
     left: 50%;
     transform: translate(-50%, 0);
@@ -63,29 +44,17 @@
 
   &__second {
     height: 100vh;
-    //background-color: white;
+    background-color: white;
     width: 50%;
     //border-bottom: 1px solid $background-gray;
   }
 
   &__content {
     position: absolute;
-    width: 50%;
+    width: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, .2);
-    padding: 5rem 2rem 2rem 1rem;
-    border-radius: 2rem;
-
-    @media screen and (max-width: $mobile) {
-      width: 100%;
-      padding: 2rem 1rem;
-    }
-
-    @media (orientation: landscape) {
-      width: 50%;
-    }
   }
 
   &__title {
@@ -97,21 +66,21 @@
     margin-bottom: 3rem;
 
     @media screen and (max-width: $mobile) {
-      font-size: 3.4rem;
+      font-size: 4rem;
       margin-bottom: 1.5rem;
     }
   }
 
   &__subtitle {
     font-size: 3rem;
-    color: white;
+    color: $dark-gray;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 3rem;
 
     @media screen and (max-width: $mobile) {
-      font-size: 2rem;
+      font-size: 2.3rem;
       margin-bottom: 1.5rem;
     }
   }
@@ -119,12 +88,12 @@
   &__description {
     font-size: 2.3rem;
     text-transform: uppercase;
-    color: white;
+    color: $dark-gray;
     font-weight: 400;
     text-align: center;
 
     @media screen and (max-width: $mobile) {
-      font-size: 1.7rem;
+      font-size: 1.9rem;
     }
   }
 
