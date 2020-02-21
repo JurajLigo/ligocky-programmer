@@ -52,7 +52,7 @@ export const Welcome = () => {
         <p className="welcome__subtitle">I am</p>
         <h1 className="welcome__title">Juraj Ligocky</h1>
         <Typing loop={true} cursorClassName="welcome__cursor">
-          <h2 className="welcome__description">Frontend software engineer</h2>
+          <h2 className="welcome__description">Software Engineer</h2>
           <Typing.Reset count={1} delay={5000} />
         </Typing>
       </div>
