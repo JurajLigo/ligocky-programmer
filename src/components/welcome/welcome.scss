@@ -70,7 +70,10 @@
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
+    padding: 1rem;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
 
     @media screen and (max-width: $mobile) {
       font-size: 4rem;
