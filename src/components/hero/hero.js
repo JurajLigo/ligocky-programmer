@@ -3,6 +3,7 @@ import Img from "gatsby-image"
 import { useStaticQuery } from "gatsby"
 import "./hero.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Typing from "react-typing-animation"
 
 export const Hero = () => {
   const data = useStaticQuery(graphql`
@@ -36,14 +37,12 @@ export const Hero = () => {
     <>
       <div className="base-container hero">
         <div className="hero__wrapper">
-          <div className="hero__image-wrapper">
-            <Img fluid={sources} className="hero__image" />
-          </div>
           <div className="hero__content">
-            <h1 className="title">ABOUT ME</h1>
-            <p className="subtitle hero__main-subtitle">
-              A small introduction about myself
-            </p>
+            <h1 className="title hero__title">Juraj Ligocky</h1>
+            <Typing loop={true} cursorClassName="welcome__cursor">
+              <h2 className="hero__subtitle">Software Engineer</h2>
+              <Typing.Reset count={1} delay={5000} />
+            </Typing>
             <Img fluid={sources} className="hero__portrait" />
             <p className="hero__text">
               Freelance, software engineer focusing on React with more than 10+
@@ -80,6 +79,9 @@ export const Hero = () => {
                 cv download
               </a>
             </div>
+          </div>
+          <div className="hero__image-wrapper">
+            <Img fluid={sources} className="hero__image" />
           </div>
         </div>
       </div>

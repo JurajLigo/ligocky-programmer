@@ -65,7 +65,6 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <Welcome />
       <Element name="about-me">
         <Hero />
       </Element>

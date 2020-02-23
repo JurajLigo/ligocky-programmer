@@ -1,16 +1,41 @@
 @import ".././base";
 
 .hero {
-  padding: 0 !important;
+  padding-top: 7rem !important;
+  padding-bottom: 0 !important;
+background: linear-gradient(
+to right,
+$background-gray 0%,
+$background-gray 50%,
+white 50%,
+white 100%);
 
   &__main-subtitle {
     margin-bottom: 0;
   }
 
+  &__title {
+    font-size: 4rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    color: $dark-gray;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
 
   &__wrapper {
     display: flex;
-    background: white;
+    background: linear-gradient(
+                    to right,
+                    $background-gray 0%,
+                    $background-gray 50%,
+                    white 50%,
+                    white 100%
+    );
   }
 
   &__content {
