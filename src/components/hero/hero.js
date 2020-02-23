@@ -38,12 +38,12 @@ export const Hero = () => {
       <div className="base-container hero">
         <div className="hero__wrapper">
           <div className="hero__content">
+            <Img fluid={sources} className="hero__portrait" />
             <h1 className="title hero__title">Juraj Ligocky</h1>
             <Typing loop={true} cursorClassName="welcome__cursor">
               <h2 className="hero__subtitle">Software Engineer</h2>
               <Typing.Reset count={1} delay={5000} />
             </Typing>
-            <Img fluid={sources} className="hero__portrait" />
             <p className="hero__text">
               Freelance, software engineer focusing on React with more than 10+
               years of various experiences with software development. Started

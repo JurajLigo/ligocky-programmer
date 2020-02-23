@@ -10,13 +10,22 @@ $background-gray 50%,
 white 50%,
 white 100%);
 
+  @media screen and (max-width: $mobile) {
+    padding-top: 2rem !important;
+  }
+
   &__main-subtitle {
     margin-bottom: 0;
   }
 
   &__title {
     font-size: 4rem !important;
-    padding-bottom: 1.5rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: .5rem !important;
+
+    @media screen and (max-width: $mobile) {
+      font-size: 3.2rem !important;
+    }
   }
 
   &__subtitle {
