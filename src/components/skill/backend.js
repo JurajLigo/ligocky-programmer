@@ -50,6 +50,12 @@ export const Backend = () => {
         </div>
         <Score value={2} limit={limit} />
       </div>
+      <div className="skill__row">
+        <div className="skill__title-wrapper">
+          <div className="skill__title skill__title--docker">Docker</div>
+        </div>
+        <Score value={2} limit={limit} />
+      </div>
     </div>
   )
 }
