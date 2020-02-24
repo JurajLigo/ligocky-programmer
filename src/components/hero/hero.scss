@@ -14,8 +14,11 @@
 
   &__title {
     font-size: 4rem !important;
-    padding-top: .5rem !important;
-    padding-bottom: .5rem !important;
+    padding-top: .7rem !important;
+    padding-bottom: .7rem !important;
+    margin: 1rem !important;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
     font-weight: 900 !important;
 
     @media screen and (max-width: $mobile) {
@@ -60,7 +63,7 @@
     padding: 3rem;
 
     @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      padding: 1.5rem;
+      padding: 0 1.5rem;
     }
 
     @media screen and (max-width: $mobile) {
