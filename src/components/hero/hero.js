@@ -39,9 +39,10 @@ export const Hero = () => {
         <div className="hero__wrapper">
           <div className="hero__content">
             <Img fluid={sources} className="hero__portrait" />
+            <h2 className="hero__subtitle">I am</h2>
             <h1 className="title hero__title">Juraj Ligocky</h1>
             <Typing loop={true} cursorClassName="welcome__cursor">
-              <h2 className="hero__subtitle">Software Engineer</h2>
+              <h2 className="hero__description">Software Engineer</h2>
               <Typing.Reset count={1} delay={5000} />
             </Typing>
             <p className="hero__text">
