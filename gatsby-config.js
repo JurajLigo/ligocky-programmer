@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Juraj Ligocky - Software Engineer`,
+    description: `Juraj Ligocky - Curriculum Vitae`,
+    author: `@Juraj Ligocky`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,12 +19,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Juraj Ligocky CV`,
-        short_name: `Juraj Ligocky CV`,
+        name: `Juraj Ligocky - Software Engineer`,
+        short_name: `Juraj Ligocky - Software Engineer`,
         start_url: `/`,
         background_color: `#FFFFFF`,
         theme_color: `#FFFFFF`,
-        display: `minimal-ui`
+        display: `minimal-ui`,
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
