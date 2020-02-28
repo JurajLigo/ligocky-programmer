@@ -24,6 +24,10 @@
     @media screen and (max-width: $mobile) {
       font-size: 3.2rem !important;
     }
+
+    @media screen and (max-width: $mobile) {
+      width: 100%;
+    }
   }
 
   &__subtitle {
@@ -37,6 +41,10 @@
     @media screen and (min-width: $mobile) and (max-width: $tablet) {
       font-size: 1.7rem;
     }
+
+    @media screen and (max-width: $mobile) {
+      width: 100%;
+    }
   }
 
   &__description {
@@ -48,6 +56,10 @@
 
     @media screen and (min-width: $mobile) and (max-width: $tablet) {
       font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: $mobile) {
+      width: 100%;
     }
   }
 
