@@ -1,11 +1,13 @@
 @import ".././base";
 
+$small-mobile: 768px;
+
 .hero {
-  padding-top: 7rem !important;
+  padding-top: 4rem !important;
   padding-bottom: 0 !important;
 
-  @media screen and (max-width: $mobile) {
-    padding-top: 2rem !important;
+  @media screen and (orientation: portrait) {
+    display: none;
   }
 
   &__main-subtitle {
@@ -15,36 +17,27 @@
   &__title {
     font-size: 4rem !important;
     padding-top: .7rem !important;
-    padding-bottom: 1rem !important;
-    margin: 0rem 1rem 1rem 1rem !important;
+    padding-bottom: .5rem !important;
+    margin: 0rem 1rem .5rem 1rem !important;
     //border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
     font-weight: 900 !important;
 
-    @media screen and (max-width: $mobile) {
-      font-size: 3.2rem !important;
-    }
-
-    @media screen and (max-width: $mobile) {
-      width: 100%;
+    @media screen and (max-width: $small-mobile) {
+      font-size: 2.7rem !important;
     }
   }
 
   &__subtitle {
-    margin: 3rem 0 0 0;
+    margin: 1rem 0 0 0;
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
     color: $dark-gray;
     text-transform: uppercase;
 
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      font-size: 1.5rem;
-    }
-
-    @media screen and (max-width: $mobile) {
-      width: 100%;
-      font-size: 1.7rem;
+    @media screen and (max-width: $small-mobile) {
+      display: none;
     }
   }
 
@@ -53,15 +46,11 @@
     font-size: 2rem;
     color: $dark-gray;
     font-weight: normal;
+    margin-bottom: 0;
     text-transform: uppercase;
 
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    @media screen and (max-width: $small-mobile) {
       font-size: 1.5rem;
-    }
-
-    @media screen and (max-width: $mobile) {
-      width: 100%;
-      font-size: 1.7rem;
     }
   }
 
@@ -76,15 +65,7 @@
     justify-content: center;
     flex-direction: column;
     width: 50%;
-    padding: 3rem;
-
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      padding: 0 1.5rem;
-    }
-
-    @media screen and (max-width: $mobile) {
-      width: 100%;
-    }
+    padding: 0 .8rem;
   }
 
   &__portrait {
@@ -110,60 +91,42 @@
   }
 
   &__image-wrapper {
+    margin: 0;
     width: 50%;
-
-    @media screen and (max-width: $mobile) {
-      display: none;
-    }
-  }
-
-  &__image {
-
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      padding: 1.5rem;
-    }
-  }
-
-  &__title {
-    color: $blue;
-    text-transform: uppercase;
-
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      font-size: 3rem !important;
-    }
   }
 
   &__text {
-    margin-top: 3rem;
     font-size: 1.9rem;
     line-height: 2.6rem;
+    margin-top: 1rem;
+    padding: 0;
+    margin-bottom: 0;
+    //margin: 0;
     color: $dark-gray;
     text-align: center;
 
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    @media screen and (max-width: $small-mobile) {
       font-size: 1.4rem;
-      line-height: 2.3rem;
-      margin-top: 1.5rem;
+      line-height: 1.7rem;
     }
   }
 
   &__icon {
     margin-right: 0.6rem;
+
+    @media screen and (max-width: $small-mobile) {
+      display: none;
+    }
   }
 
   &__contacts {
-    margin: 4rem 0;
-
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      margin: 1.2rem 0;
-    }
+    margin: 1rem 0 .6rem 0;
   }
 
   &__button {
     display: inline-block;
     background: $blue;
-    //border: 1px solid $blue;
-    color: white;
+    color: #fff;
     font-size: 1.5rem;
     padding: 1rem 2rem;
     border-radius: 2rem;
@@ -177,16 +140,10 @@
       border: 1px solid $blue;
     }
 
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      font-size: 1.2rem;
-      padding: .8rem 1.3rem;
-    }
-
-    @media screen and (max-width: $mobile) {
-      width: 100%;
-      margin: 1rem 0;
-      padding: 1.5rem 2rem;
-      text-align: center;
+    @media screen and (max-width: $small-mobile) {
+      font-size: 1.1rem;
+      padding: 1rem;
+      margin: 1rem .8rem 0 0;
     }
   }
 }

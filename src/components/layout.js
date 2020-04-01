@@ -33,6 +33,8 @@ import "./layout.css"
 import { Work } from "./work/work"
 import { Skill } from "./skill/skill"
 import { Welcome } from "./welcome/welcome"
+import { AboutMe } from "./aboutMe/aboutMe"
+import { HeroMobilePortrait } from "./heroMobilePortrait/heroMobilePortrait"
 
 library.add(faGraduationCap)
 library.add(faBasketballBall)
@@ -67,6 +69,7 @@ const Layout = ({ children }) => {
       <Header />
       <Element name="about-me">
         <Hero />
+        <HeroMobilePortrait />
       </Element>
       <div className="scroll-placeholder scroll-placeholder--gray"></div>
       <Element name="work">

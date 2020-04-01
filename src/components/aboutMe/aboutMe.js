@@ -1,23 +1,16 @@
 import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery } from "gatsby"
-import "./hero.scss"
+import "./aboutMe.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Typing from "react-typing-animation"
 
-export const Hero = () => {
+export const AboutMe = () => {
   const data = useStaticQuery(graphql`
     query {
-      desktopImage: file(relativePath: { eq: "hero/hero-2.jpg" }) {
+      image: file(relativePath: { eq: "hero/hero-2.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      mobileImage: file(relativePath: { eq: "hero/hero-mobile.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1500) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -25,26 +18,14 @@ export const Hero = () => {
     }
   `)
 
-  const sources = [
-    data.desktopImage.childImageSharp.fluid,
-    {
-      ...data.desktopImage.childImageSharp.fluid,
-      media: `(orientation: landscape)`,
-    },
-  ]
-
   return (
-    <>
-      <div className="base-container hero">
-        <div className="hero__wrapper">
-          <div className="hero__content">
-            <h2 className="hero__subtitle">I am</h2>
-            <h1 className="title hero__title">Juraj Ligocky</h1>
-            <Typing loop={true} cursorClassName="welcome__cursor">
-              <h2 className="hero__description">Software Engineer</h2>
-              <Typing.Reset count={1} delay={5000} />
-            </Typing>
-            <p className="hero__text">
+    <div className="about-me">
+      <div className="base-container">
+        <h1 className="title">about me</h1>
+        <p className="subtitle">A small introduction about myself</p>
+        <div className="about-me__wrapper">
+          <div className="about-me__content">
+            <p className="about-me__text">
               Freelance, software engineer focusing on React with more than 10+
               years of various experiences with software development. Started
               career as Java programmer and gradually transform to frontend
@@ -53,8 +34,8 @@ export const Hero = () => {
               information systems, and also small web projects
             </p>
 
-            <div className="hero__contacts">
-              <a className="hero__button" href="mailto:j.ligocky@gmail.com">
+            <div className="about-me__contacts">
+              <a className="about-me__button about-me__button--white" href="mailto:j.ligocky@gmail.com">
                 <FontAwesomeIcon
                   icon="envelope"
                   size="lg"
@@ -62,7 +43,7 @@ export const Hero = () => {
                 />
                 write me
               </a>
-              <a className="hero__button" href="tel:00421902329589">
+              <a className="about-me__button about-me__button--white" href="tel:00421902329589">
                 <FontAwesomeIcon
                   icon="mobile-alt"
                   size="lg"
@@ -70,7 +51,7 @@ export const Hero = () => {
                 />
                 call me
               </a>
-              <a className="hero__button hero__button--white">
+              <a className="about-me__button about-me__button--white">
                 <FontAwesomeIcon
                   icon="file-pdf"
                   size="lg"
@@ -80,11 +61,11 @@ export const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="hero__image-wrapper">
-            <Img fluid={sources} className="hero__image" />
+          <div className="about-me__image-wrapper">
+            <Img fluid={data.image.childImageSharp.fluid} className="about-me__portrait" />
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
