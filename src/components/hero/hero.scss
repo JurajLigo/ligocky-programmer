@@ -78,6 +78,11 @@
     width: 50%;
     padding: 3rem;
 
+    @media screen and (min-width: 1200px) {
+      width: 40%;
+      padding: 1rem;
+    }
+
     @media screen and (min-width: $mobile) and (max-width: $tablet) {
       padding: 0 1.5rem;
     }
@@ -111,6 +116,10 @@
 
   &__image-wrapper {
     width: 50%;
+
+    @media screen and (min-width: 1200px) {
+      width: 60%;
+    }
 
     @media screen and (max-width: $mobile) {
       display: none;
