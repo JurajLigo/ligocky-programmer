@@ -1,7 +1,7 @@
 @import ".././base";
 
 .skill {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   min-height: 100vh;
 
@@ -25,7 +25,7 @@
   &__row {
     font-size: 2rem;
     display: flex;
-    padding: .4rem 0;
+    padding: 0.4rem 0;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid $background-gray;
@@ -49,7 +49,7 @@
     font-weight: normal;
     padding: 1rem 2rem;
     border-radius: 1rem;
-    margin-right: .6rem;
+    margin-right: 0.6rem;
     background-color: #e0e0e0;
     filter: grayscale(35%);
 
@@ -59,46 +59,46 @@
 
     &--react {
       background: black;
-      color: #61DAFB;
+      color: #61dafb;
     }
 
     &--javascript {
-      background: #F7DF1D;
+      background: #f7df1d;
       color: black;
     }
 
     &--typescript {
-      background: #007ACC;
+      background: #007acc;
       color: white;
     }
 
     &--redux {
-      background: #764ABC;
+      background: #764abc;
       color: white;
     }
 
     &--html {
-      background: #EC662B;
+      background: #ec662b;
       color: white;
     }
 
     &--css {
-      background: #2A97CF;
+      background: #2a97cf;
       color: white;
     }
 
     &--sass {
-      background: #F1F2F3;
-      color: #CF649A;
+      background: #f1f2f3;
+      color: #cf649a;
     }
 
     &--bem {
-      background: #8A8A9B;
+      background: #8a8a9b;
       color: white;
     }
 
     &--jasmine {
-      background: #8A4182;
+      background: #8a4182;
       color: white;
     }
 
@@ -108,7 +108,7 @@
     }
 
     &--java {
-      background: #EE0000;
+      background: #ee0000;
       color: white;
     }
 
@@ -118,32 +118,48 @@
     }
 
     &--python {
-      background: #1E415E;
-      color: #E3E3E3;
+      background: #1e415e;
+      color: #e3e3e3;
     }
 
     &--android {
-      background: #94C24B;
+      background: #94c24b;
       color: white;
     }
 
     &--git {
-      background: #EFEFE7;
+      background: #efefe7;
       color: black;
     }
 
     &--spring {
-      background: #65B843;
+      background: #65b843;
       color: white;
     }
 
     &--gatsby {
-      background: #542C85;
+      background: #542c85;
       color: white;
+    }
+
+    &--next {
+      background: white;
+      color: black;
+      border: 1px solid black;
     }
 
     &--docker {
       background: #379fee;
+      color: white;
+    }
+
+    &--php {
+      background: #8892bf;
+      color: #222530;
+    }
+
+    &--wordpress {
+      background: #21759b;
       color: white;
     }
   }
@@ -167,7 +183,7 @@
   }
 
   &__list-item {
-    padding: .8rem 0;
+    padding: 0.8rem 0;
 
     &:before {
       content: "•";
@@ -212,5 +228,4 @@
       margin-bottom: 0;
     }
   }
-
 }

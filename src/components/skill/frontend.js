@@ -67,8 +67,17 @@ export const Frontend = () => {
       <div className="skill__row">
         <div className="skill__title-wrapper">
           <div className="skill__title skill__title--gatsby">Gatsby.js</div>
+          <div className="skill__title skill__title--next">Next.js</div>
         </div>
         <Score value={5} limit={limit} />
+      </div>
+
+      <div className="skill__row">
+        <div className="skill__title-wrapper">
+          <div className="skill__title skill__title--php">PHP</div>
+          <div className="skill__title skill__title--wordpress">WordPress</div>
+        </div>
+        <Score value={2} limit={limit} />
       </div>
     </div>
   )
