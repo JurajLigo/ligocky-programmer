@@ -4,6 +4,7 @@ import { useStaticQuery } from "gatsby"
 import "./hero.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Typing from "react-typing-animation"
+import cvPdf from "../../files/jligocky-CV.pdf"
 
 export const Hero = () => {
   const data = useStaticQuery(graphql`
@@ -46,12 +47,12 @@ export const Hero = () => {
               <Typing.Reset count={1} delay={5000} />
             </Typing>
             <p className="hero__text">
-              Freelance, software engineer focusing on React with more than 10+
-              years of various experiences with software development. Started
-              career as Java programmer and gradually transform to frontend
-              Javascript. Skilled, passionate professional with a demonstrated
-              history of working in the international environment, big
-              information systems, and also small web projects
+              Freelance, senior software engineer focusing on React with more
+              than 10+ years of various experiences with software development.
+              Started career as Java programmer and gradually transform to
+              frontend Javascript. Skilled, passionate professional with a
+              demonstrated history of working in the big, international projects
+              and also small web projects.
             </p>
 
             <div className="hero__contacts">
@@ -71,7 +72,7 @@ export const Hero = () => {
                 />
                 call me
               </a>
-              <a className="hero__button hero__button--white">
+              <a className="hero__button hero__button--white" href={cvPdf}>
                 <FontAwesomeIcon
                   icon="file-pdf"
                   size="lg"

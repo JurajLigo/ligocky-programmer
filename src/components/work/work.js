@@ -20,20 +20,26 @@ export const Work = () => {
           <TimelineItem
             headerText="GoHealth - Project GoHealth"
             date="2019 - present, Bratislava"
-            title="Software Engineer"
+            title="Senior Software Engineer"
             headerStyle="work__header work__header--gohealth"
             icon={WorkIcon}
           >
             <WorkContentItem
-              projectText="Health care system which provides the end-to-end care solution"
-              responsibilityText="Developing frontend components for showing health insurance plans in marketplace, parsing carrier data files and save data
-to database, implementing frontend components for A/B testing using google optimize, working with top american software engineers"
+              projectText="Leading health insurance marketplace in USA"
+              responsibilities={[
+                "developing frontend components for showing health insurance plans in marketplace",
+                "implementing experimental pages for A/B testing",
+                "introducing new custom React hooks to improve codebase",
+                "working on gohealth.com and cooperating on creating completely new gohealth.sk",
+                "parsing carrier data files and save them to database",
+                "working with top american software engineers",
+              ]}
               technologies={[
                 "React",
-                "Redux",
                 "Typescript",
                 "Javascript",
                 "HTML/CSS",
+                "Redux(Saga)",
                 "Sass",
                 "BEM",
                 "Jasmine",
@@ -41,7 +47,9 @@ to database, implementing frontend components for A/B testing using google optim
                 "Java",
                 "Spring",
                 "JUnit",
-                "Python"
+                "Python",
+                "PHP",
+                "WordPress",
               ]}
             />
           </TimelineItem>
@@ -56,19 +64,23 @@ to database, implementing frontend components for A/B testing using google optim
             <WorkContentItem
               projectText="Content management system, serving more than 200 web portals with millions of monthly
                             visitors and over 300 content editors in various countries"
-              responsibilityText="Implementation of social communities components (polls, profile, login) and components for non-governmental business from scratch, implementation of
-                            completely new mobile header optimized and configurable for 200 web pages, programming frontend
-                            components based on specification"
+              responsibilities={[
+                "implementation of social communities components (polls, profile, login)",
+                "working from scratch on whole frontend part for non-governmental business",
+                "implementation of completely new mobile header optimized and configurable for 200 web pages",
+                "refactor old JQuery code to React",
+              ]}
               technologies={[
                 "React",
-                "Redux",
                 "Javascript",
                 "Typescript",
                 "HTML/CSS",
                 "Sass",
+                "Redux",
                 "JQuery",
                 "BEM",
-                "AEM"
+                "AEM",
+                "REST",
               ]}
             />
           </TimelineItem>
@@ -83,14 +95,16 @@ to database, implementing frontend components for A/B testing using google optim
             <WorkContentItem
               projectText="The web application offers guided city tours around the world, where each tour is
                             custom-made for the user"
-              responsibilityText="Implementing paging, sorting and filtering for all tables in application"
+              responsibilities={[
+                "implementing paging, sorting and filtering for all tables in application",
+              ]}
               technologies={[
                 "Angular 2",
                 "Javascript",
                 "Typescript",
                 "HTML/CSS",
                 "Bootstrap",
-                "Node.js"
+                "Node.js",
               ]}
             />
           </TimelineItem>
@@ -103,11 +117,14 @@ to database, implementing frontend components for A/B testing using google optim
             icon={WorkIcon}
           >
             <WorkContentItem
-              projectText="In prime most important project in VUB Bank (Intesa San Paolo), big solution for capturing
-                            all bank channels including completely new Internet Banking"
-              responsibilityText="Modeling, managing, developing (from BE to FE) and responsibility for frontend flows and
-                            components in particular areas, implementing frontend logic for all SEPA payment screens,
-                            technical support, honoured as the Key Employee in VUB Bank"
+              projectText="Big solution for capturing all bank channels including completely new Internet Banking. In prime most important project in VUB Bank (Intesa San Paolo)"
+              responsibilities={[
+                "honoured as the Key Employee in VUB Bank",
+                "implementing frontend logic for all SEPA payment screens",
+                "developing new HighCharts features",
+                "modeling and managing flows and components in particular areas",
+                "technical support",
+              ]}
               technologies={[
                 "MDA",
                 "Javascript",
@@ -132,8 +149,11 @@ to database, implementing frontend components for A/B testing using google optim
           >
             <WorkContentItem
               projectText="Information system for bank branches providing sales of all bank products"
-              responsibilityText="Implementing frontend screens, developing and managing application for simulating mortgages,
-                            programming based on specification"
+              responsibilities={[
+                "implementing frontend screens",
+                "developing and managing application for simulating mortgages",
+                "programming based on specification",
+              ]}
               technologies={[
                 "J2EE",
                 "JSF",
@@ -160,7 +180,9 @@ to database, implementing frontend components for A/B testing using google optim
           >
             <WorkContentItem
               projectText="Internal knowledge based application for storing and managing documents"
-              responsibilityText="Design and implementation of special graph feature for managing documents"
+              responsibilities={[
+                "design and implementation of special graph feature for managing documents",
+              ]}
               technologies={[
                 "Java",
                 "JUNG",
@@ -182,8 +204,10 @@ to database, implementing frontend components for A/B testing using google optim
           >
             <WorkContentItem
               projectText="Information system for evidence various insurances"
-              responsibilityText="Implementing server-domain objects based on diagrams, programming, bug
-        fixing on frontend and backend side"
+              responsibilities={[
+                "implementing server-domain objects based on diagrams",
+                "bugfixing on frontend and backend side",
+              ]}
               technologies={["J2EE", "Wicket", "Hibernate", "JUnit"]}
             />
           </TimelineItem>

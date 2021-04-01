@@ -32,8 +32,7 @@ export const Education = () => {
           <TimelineItem
             headerText="Universitat Politechnica de Catalunya, Faculcat d'Informatics de Barcelona"
             date="2009, Barcelona"
-            title="Master Software Engineering and Information
-                        Systems"
+            title="Erasmus exchange participant"
             headerStyle="education__header education__header--upc"
             icon={EducationIcon}
           >
@@ -65,8 +64,8 @@ export const Education = () => {
             icon={EducationIcon}
           >
             <p className="vertical-timeline-element-text timeline-item__text">
-              Bachelor study focused on informatics and programming. The theme of final project was:
-              Swing Guide
+              Bachelor study focused on informatics and programming. The theme
+              of final project was: Swing Guide
             </p>
           </TimelineItem>
           <TimelineItem
