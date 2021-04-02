@@ -97,6 +97,7 @@ export const Work = () => {
                             custom-made for the user"
               responsibilities={[
                 "implementing paging, sorting and filtering for all tables in application",
+                "developing backend and frontend based on the specification",
               ]}
               technologies={[
                 "Angular 2",
@@ -152,7 +153,7 @@ export const Work = () => {
               responsibilities={[
                 "implementing frontend screens",
                 "developing and managing application for simulating mortgages",
-                "programming based on specification",
+                "developing based on specification",
               ]}
               technologies={[
                 "J2EE",
@@ -182,6 +183,7 @@ export const Work = () => {
               projectText="Internal knowledge based application for storing and managing documents"
               responsibilities={[
                 "design and implementation of special graph feature for managing documents",
+                "developing backend and frontend based on the specification",
               ]}
               technologies={[
                 "Java",
