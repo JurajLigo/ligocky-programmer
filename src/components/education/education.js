@@ -25,7 +25,7 @@ export const Education = () => {
           >
             <p className="vertical-timeline-element-text timeline-item__text">
               Engineering study focused on information systems and software
-              architecture. The theme of final project was: Using design
+              architecture. The theme of the final project was: Using design
               patterns by service composition in SOA
             </p>
           </TimelineItem>
@@ -48,11 +48,11 @@ export const Education = () => {
             icon={EducationIcon}
           >
             <p className="vertical-timeline-element-text timeline-item__text">
-              The half year lasting system of courses focused on Java and J2EE
+              The half-year lasting system of courses focused on Java and J2EE
               (quick guide to Java, Swing, Spring, EJB, Wicket, design
-              patterns). After passing all courses and tests, I had to create
-              J2EE application using mentioned frameworks. Best participants
-              were then offered work contract
+              patterns). After passing all courses and tests, I had to create a
+              J2EE application using mentioned frameworks. The best participants
+              were then offered a work contract
             </p>
           </TimelineItem>
           <TimelineItem
@@ -64,8 +64,8 @@ export const Education = () => {
             icon={EducationIcon}
           >
             <p className="vertical-timeline-element-text timeline-item__text">
-              Bachelor study focused on informatics and programming. The theme
-              of final project was: Swing Guide
+              Bachelor's study focused on informatics and programming. The theme
+              of the final project was: Swing Guide
             </p>
           </TimelineItem>
           <TimelineItem

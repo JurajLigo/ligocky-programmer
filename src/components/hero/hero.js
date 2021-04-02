@@ -49,10 +49,10 @@ export const Hero = () => {
             <p className="hero__text">
               Freelance, senior software engineer focusing on React with more
               than 10+ years of various experiences with software development.
-              Started career as Java programmer and gradually transform to
+              Started my career as a Java programmer and gradually transform to
               frontend Javascript. Skilled, passionate professional with a
-              demonstrated history of working in the big, international projects
-              and also small web projects.
+              demonstrated history of working in big, international projects and
+              also small web projects.
             </p>
 
             <div className="hero__contacts">
