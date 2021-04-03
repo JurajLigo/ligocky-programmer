@@ -7,7 +7,7 @@ export const WorkContentItem = props => {
     <>
       <h3 className="work-content-item__subtitle">Project description</h3>
       <p className="work-content-item__text">{props.projectText}</p>
-      <h3 className="work-content-item__subtitle">My responsibilites</h3>
+      <h3 className="work-content-item__subtitle">My responsibilities</h3>
       <ul className="work-content-item__notes">
         {props.responsibilities &&
           props.responsibilities.map((responsibility, index) => (

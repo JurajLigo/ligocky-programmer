@@ -27,12 +27,12 @@ export const Work = () => {
             <WorkContentItem
               projectText="Leading health insurance marketplace in USA"
               responsibilities={[
-                "developing frontend components for showing health insurance plans in marketplace",
+                "developing frontend components for showing health insurance plans in the marketplace",
                 "implementing experimental pages for A/B testing",
-                "introducing new custom React hooks to improve codebase",
+                "introducing new custom React hooks to improve the codebase",
                 "working on gohealth.com and cooperating on creating completely new gohealth.sk",
-                "parsing carrier data files and save them to database",
-                "working with top american software engineers",
+                "parsing carrier data files and save them to the database",
+                "working with top American software engineers",
               ]}
               technologies={[
                 "React",
@@ -96,7 +96,7 @@ export const Work = () => {
               projectText="The web application offers guided city tours around the world, where each tour is
                             custom-made for the user"
               responsibilities={[
-                "implementing paging, sorting and filtering for all tables in application",
+                "implementing paging, sorting, and filtering for all tables in the application",
                 "developing backend and frontend based on the specification",
               ]}
               technologies={[
@@ -120,7 +120,7 @@ export const Work = () => {
             <WorkContentItem
               projectText="Big solution for capturing all bank channels including completely new Internet Banking. In prime most important project in VUB Bank (Intesa San Paolo)"
               responsibilities={[
-                "honoured as the Key Employee in VUB Bank",
+                "honored as the Key Employee in VUB Bank",
                 "implementing frontend logic for all SEPA payment screens",
                 "developing new HighCharts features",
                 "modeling and managing flows and components in particular areas",
